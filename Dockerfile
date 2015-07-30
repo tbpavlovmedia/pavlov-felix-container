@@ -30,7 +30,7 @@ RUN apt-get install -y oracle-java8-installer
 # Now get felix set up
 #
 
-ADD http://apache.mirrors.pair.com/felix/org.apache.felix.main.distribution-5.0.0.tar.gz /tmp/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution/5.0.0/org.apache.felix.main.distribution-5.0.0.tar.gz /tmp/
 RUN mkdir -p /opt/felix && cd /opt/felix && tar xzvf /tmp/org.apache.felix.main.distribution-5.0.0.tar.gz
 RUN ln -s /opt/felix/felix-framework-5.0.0 /opt/felix/current
 
@@ -38,21 +38,20 @@ RUN ln -s /opt/felix/felix-framework-5.0.0 /opt/felix/current
 # Basic plugins to get us running
 #
 
-## Pull directly from Apach if possbile
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.configadmin-1.8.6.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.eventadmin-1.4.2.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.fileinstall-3.5.0.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.http.api-2.3.2.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.http.jetty-3.0.2.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.http.servlet-api-1.1.0.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.http.whiteboard-2.3.2.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.metatype-1.0.12.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.log-1.0.1.jar /opt/felix/current/bundle/
-## SCR was newer in maven oddly.
+## Pull from repo1
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.configadmin/1.8.6/org.apache.felix.configadmin-1.8.6.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.eventadmin/1.4.2/org.apache.felix.eventadmin-1.4.2.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.fileinstall/3.5.0/org.apache.felix.fileinstall-3.5.0.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.api/2.3.2/org.apache.felix.http.api-2.3.2.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.jetty/3.0.2/org.apache.felix.http.jetty-3.0.2.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.servlet-api/1.1.0/org.apache.felix.http.servlet-api-1.1.0.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.http.whiteboard/2.3.2/org.apache.felix.http.whiteboard-2.3.2.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.metatype/1.0.12/org.apache.felix.metatype-1.0.12.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.log/1.0.1/org.apache.felix.log-1.0.1.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.scr/1.8.2/org.apache.felix.scr-1.8.2.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.webconsole-4.2.8-all.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.webconsole.plugins.ds-1.0.0.jar /opt/felix/current/bundle/
-ADD http://mirrors.ibiblio.org/apache/felix/org.apache.felix.webconsole.plugins.event-1.1.2.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole/4.2.8/org.apache.felix.webconsole-4.2.8-all.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.ds/1.0.0/org.apache.felix.webconsole.plugins.ds-1.0.0.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.event/1.1.2/org.apache.felix.webconsole.plugins.event-1.1.2.jar /opt/felix/current/bundle/
 
 #
 # This section is more specifically for getting JAX-RS running
