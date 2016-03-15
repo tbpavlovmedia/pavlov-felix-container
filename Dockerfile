@@ -26,7 +26,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ##
 
 # Felix
-ENV felix_version 5.4.0
+ENV felix_version 5.0.0
 ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 ENV felix_configadmin 1.8.8
@@ -47,8 +47,10 @@ ENV felix_webconsole_event 1.1.2
 ENV slf4j_version 1.7.13
 
 # JAX-RS and Jackson
-ENV jaxrs_version 5.0
+ENV jaxrs_version 5.3
 ENV jersey_version 2.22.1
+ENV jersey_gson_version 2.3
+ENV gson_version 2.3.1
 ENV jackson_version 2.4.0
 
 #
@@ -85,7 +87,8 @@ ADD ${felix_base}/org.apache.felix.webconsole.plugins.event/${felix_webconsole_e
 ## Jax-RS and Jackson
 ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/publisher/${jaxrs_version}/publisher-${jaxrs_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-all/${jersey_version}/jersey-all-${jersey_version}.jar /opt/felix/current/bundle/
-ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-moxy/${jersey_version}/jerseymoxy${jersey_version}.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/provider-gson/${jersey_gson_version}/provider-gson-${jersey_gson_version}.jar /opt/felix/current/bundle/
+ADD http://repo1.maven.org/maven2/com/google/code/gson/gson/${gson_version}/gson-${gson_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/${jackson_version}/jackson-core-${jackson_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/${jackson_version}/jackson-annotations-${jackson_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/${jackson_version}/jackson-databind-${jackson_version}.jar /opt/felix/current/bundle/

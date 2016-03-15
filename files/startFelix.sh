@@ -28,4 +28,5 @@ case $RUNTYPE in
 esac
 
 # Fire up felix
-pushd /opt/felix/current && java $JVM_OPTIONS -jar bin/felix.jar
+pushd /opt/felix/current 
+exec java $JVM_OPTIONS -jar bin/felix.jar
