@@ -1,5 +1,5 @@
 # FROM ubuntu:14.04
-FROM sdempsay/docker-java8
+FROM pavlovmedia/docker-java8
 MAINTAINER Shawn Dempsay <sdempsay@pavlovmedia.com>
 
 ##
@@ -116,9 +116,7 @@ RUN mkdir -p /opt/felix/current/configs
 EXPOSE 8080 8000
 VOLUME ["/opt/felix/current/configs", "/opt/felix/current/load" ]
 
-#
-# Copy our startup script
-#
+ENV JVM_OPTIONS="-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
 
-COPY files/startFelix.sh /opt/felix/current/
-CMD /opt/felix/current/startFelix.sh
+WORKDIR /opt/felix/current
+CMD exec java $JVM_OPTIONS -jar bin/felix.jar
