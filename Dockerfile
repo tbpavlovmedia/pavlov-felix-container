@@ -35,11 +35,11 @@ ENV felix_fileinstall 3.5.0
 ENV felix_http_api 2.3.2
 ENV felix_http_jetty 3.0.2
 ENV felix_http_servlet 1.1.0
-ENV felix_http_whiteboard 2.3.2
-ENV felix_metatype 1.0.12
+ENV felix_http_whiteboard 3.0.0
+ENV felix_metatype 1.1.2
 ENV felix_log 1.0.1
 ENV felix_scr 2.0.2
-ENV felix_webconsole 4.2.8
+ENV felix_webconsole 4.2.16
 ENV felix_webconsole_ds 2.0.2
 ENV felix_webconsole_event 1.1.2
 
@@ -85,7 +85,7 @@ ADD ${felix_base}/org.apache.felix.webconsole.plugins.event/${felix_webconsole_e
 ## Jax-RS and Jackson
 ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/publisher/${jaxrs_version}/publisher-${jaxrs_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-all/${jersey_version}/jersey-all-${jersey_version}.jar /opt/felix/current/bundle/
-ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-moxy/${jersey_version}/jerseymoxy${jersey_version}.jar /opt/felix/current/bundle/
+#ADD http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-moxy/${jersey_version}/jerseymoxy${jersey_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/${jackson_version}/jackson-core-${jackson_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/${jackson_version}/jackson-annotations-${jackson_version}.jar /opt/felix/current/bundle/
 ADD http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/${jackson_version}/jackson-databind-${jackson_version}.jar /opt/felix/current/bundle/
