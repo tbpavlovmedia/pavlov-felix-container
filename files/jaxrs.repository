@@ -1,0 +1,563 @@
+<?xml version="1.0" ?>
+<!--Created by Package Drone 0.13.0.20160504-0926 - Mon Aug 29 16:01:36 CDT 2016-->
+
+<repository lastmodified="201608242160136.278" name="cae0e949-e15e-428a-8e6f-62283cf0cfaf">
+
+<resource id="13edf2eb-b087-463f-a4f8-82e8b95c0850" symbolicname="com.eclipsesource.jaxrs.publisher" version="5.0.0.201506221200" presentationname="%Bundle-Name" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/publisher/5.0/publisher-5.0.jar">
+	<size>33379</size>
+	<require name="ee" filter="(ee=JavaSE-1.7)" extend="false" multiple="false" optional="false">Execution Environment (ee=JavaSE-1.7)</require>
+	<capability name="bundle">
+		<p n="presentationname" v="%Bundle-Name"/>
+		<p n="symbolicname" v="com.eclipsesource.jaxrs.publisher"/>
+		<p n="manifestversion" v="2"/>
+		<p n="version" t="version" v="5.0.0.201506221200"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.eclipsesource.jaxrs.publisher"/>
+		<p n="version" t="version" v="5.0.0"/>
+	</capability>
+	<require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.servlet - [2.3.0,4.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.servlet.http - [2.3.0,4.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.core - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.ext - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.jersey.internal)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.internal - [2.3.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.jersey.server)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.server - [2.3.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.servlet - [2.3.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.osgi.framework)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.framework - [1.5.0,2.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.osgi.service.cm)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.service.cm - [1.2.0,2.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.osgi.service.http)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.service.http - [1.2.0,2.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.osgi.util.tracker)(&amp;(version&gt;=1.4.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.util.tracker - [1.4.0,2.0.0) - required</require>
+</resource>
+
+<resource id="0f0e9c8e-0a56-4afa-bfa6-51467dae0bb1" symbolicname="com.eclipsesource.jaxrs.jersey-all" version="2.22.1" presentationname="jersey-all" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-all/2.22.1/jersey-all-2.22.1.jar">
+	<size>6497256</size>
+	<require name="ee" filter="(ee=JavaSE-1.7)" extend="false" multiple="false" optional="false">Execution Environment (ee=JavaSE-1.7)</require>
+	<capability name="bundle">
+		<p n="presentationname" v="jersey-all"/>
+		<p n="symbolicname" v="com.eclipsesource.jaxrs.jersey-all"/>
+		<p n="manifestversion" v="2"/>
+		<p n="version" t="version" v="2.22.1"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.ws.rs"/>
+		<p n="version" t="version" v="2.0.0"/>
+		<p n=":uses" v="javax.ws.rs.core,javax.ws.rs.ext"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.ws.rs.core"/>
+		<p n="version" t="version" v="2.0.0"/>
+		<p n=":uses" v="javax.ws.rs.ext,javax.ws.rs,javax.xml.bind.annotation.adapters,javax.xml.namespace,javax.xml.bind.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.ws.rs.container"/>
+		<p n="version" t="version" v="2.0.0"/>
+		<p n=":uses" v="javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.ws.rs.ext"/>
+		<p n="version" t="version" v="2.0.0"/>
+		<p n=":uses" v="javax.ws.rs.core,javax.ws.rs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.ws.rs.client"/>
+		<p n="version" t="version" v="2.0.0"/>
+		<p n=":uses" v="javax.ws.rs.core,javax.net.ssl,javax.ws.rs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.annotation"/>
+		<p n="version" t="version" v="1.2.0"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.annotation.sql"/>
+		<p n="version" t="version" v="1.2.0"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.annotation.security"/>
+		<p n="version" t="version" v="1.2.0"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.monitoring.jmx"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,javax.management,org.glassfish.jersey.server.spi,javax.ws.rs,javax.inject,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.model,org.glassfish.jersey.server.internal.monitoring"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.filter"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.annotation,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.message.internal,org.glassfish.jersey.server,org.glassfish.hk2.api,org.glassfish.jersey.spi,javax.inject,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.annotation.security,org.glassfish.jersey.server.model,org.glassfish.jersey.uri"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.media.multipart.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs.core,javax.ws.rs,org.glassfish.jersey.message.internal,org.glassfish.jersey.media.multipart,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.server.model,org.glassfish.jersey.message,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.model.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities,javax.annotation,org.glassfish.jersey.internal.spi,javax.ws.rs,org.glassfish.hk2.api,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.model,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.process,javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities,org.glassfish.hk2.api,org.glassfish.jersey.server.spi,org.glassfish.jersey.model.internal,org.glassfish.jersey.model,org.glassfish.jersey.server.model,javax.ws.rs,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.server.internal,javax.ws.rs.container,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey,org.glassfish.jersey.server.internal.monitoring,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.message,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.process.internal,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.process,org.glassfish.jersey.uri,org.glassfish.jersey.uri.internal,org.glassfish.jersey.server.internal.scanning,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.spi"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.jackson.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.message.filtering.spi,javax.inject,javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.jackson,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.cache"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.cache.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.oauth1.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.xml.bind,javax.xml.namespace,javax.xml.bind.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.uri"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.uri.internal,org.glassfish.jersey.internal.util.collection,javax.ws.rs.core,org.glassfish.jersey.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.api,javax.ws.rs,org.glassfish.jersey.spi,org.glassfish.jersey.server,javax.ws.rs.core,org.glassfish.jersey.server.model"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.message.filtering"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.inject,org.glassfish.jersey.message.filtering.spi,org.glassfish.jersey.model.internal,org.glassfish.jersey.message.filtering.internal,javax.inject,org.glassfish.hk2.api,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities.binding,javax.ws.rs,org.glassfish.jersey.internal.util.collection,javax.annotation.security,org.glassfish.jersey.server.filter,org.glassfish.jersey.server,org.glassfish.jersey.server.model"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.filter"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.client,org.glassfish.jersey.spi,org.glassfish.jersey.internal.inject,org.glassfish.jersey.client.internal,org.glassfish.hk2.api,javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.uri,org.glassfish.jersey.servlet.internal,org.glassfish.jersey.server.spi,javax.ws.rs,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,javax.servlet,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.servlet.http,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.server.internal.scanning,org.glassfish.hk2.api,org.glassfish.jersey.servlet.spi,org.glassfish.jersey.servlet.internal.spi,org.glassfish.jersey.internal.inject,javax.inject,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.process.internal,org.glassfish.jersey.message.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.media.sse"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.message,org.glassfish.jersey.client,org.glassfish.jersey.internal,javax.ws.rs.core,javax.ws.rs,javax.ws.rs.ext,javax.inject,org.glassfish.jersey.server,javax.ws.rs.client,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.model"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.internal,org.glassfish.jersey,org.glassfish.jersey.message,org.glassfish.hk2.api,org.glassfish.jersey.process,javax.ws.rs.container,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.inject,javax.inject,org.glassfish.jersey.spi,org.glassfish.jersey.uri,org.glassfish.jersey.message.internal,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,javax.ws.rs.ext,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.hk2.utilities,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey.server.monitoring"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.reflection"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.general,org.glassfish.hk2.utilities.reflection.internal,javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.model.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.server.model,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.internal.inject,javax.ws.rs.core,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey,javax.ws.rs.container,org.glassfish.jersey.process,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.wadl.processor"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.message.filtering.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.spi,org.glassfish.jersey.internal.util.collection,javax.xml.bind,org.glassfish.jersey.message.filtering"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.wadl.internal,javax.xml.bind,org.glassfish.jersey.server.model,javax.ws.rs.core,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.server.wadl.processor,javax.xml.namespace"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.process.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.spi,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.process,org.glassfish.jersey.internal.util.collection"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.filter.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server.filter,javax.ws.rs,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.util"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.osgi.framework,javax.ws.rs.core,javax.xml.parsers,javax.xml,javax.xml.namespace"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n,org.glassfish.hk2.api,javax.servlet,org.glassfish.jersey.server,javax.inject,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.spi,org.glassfish.jersey.servlet.spi,org.glassfish.jersey.server.internal,javax.servlet.http,javax.ws.rs.core,org.glassfish.jersey.servlet.internal.spi,org.glassfish.jersey.internal,javax.naming"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.oauth1"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,javax.ws.rs,org.glassfish.jersey.spi,org.glassfish.jersey.oauth1.signature,javax.annotation,org.glassfish.jersey.server.model,org.glassfish.jersey.server.oauth1.internal,javax.ws.rs.container,org.glassfish.jersey.server,org.glassfish.jersey.internal.util,javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.mvc.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.mvc.spi,org.glassfish.jersey.server.mvc,org.glassfish.jersey.internal.l10n,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs.ext,org.glassfish.jersey.server.model,javax.ws.rs.core,org.glassfish.jersey.message.internal,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.annotation,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.server.internal.inject,javax.ws.rs.container,org.glassfish.jersey.process,org.glassfish.jersey.server.model.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.routing"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.message.internal,javax.ws.rs.core,org.glassfish.jersey.server.model,org.glassfish.jersey.server,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.process.internal,org.glassfish.jersey.process,javax.ws.rs,javax.ws.rs.container,org.glassfish.jersey.message,org.glassfish.jersey.server.internal,org.glassfish.jersey.uri,org.glassfish.jersey.internal,org.glassfish.hk2.api,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.hk2.api,javax.net.ssl"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.uri.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.uri,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.core,org.glassfish.jersey.server.wadl,javax.xml.namespace,javax.ws.rs,org.glassfish.jersey.server.wadl.config,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.inject,javax.xml.bind,javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.internal,javax.xml.transform,javax.xml.parsers,javax.xml.transform.sax,org.xml.sax"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.inject"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.internal.inject,javax.ws.rs,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.server.model,javax.ws.rs.container,org.glassfish.jersey.server.internal.process,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.cache,org.glassfish.jersey.process.internal,javax.ws.rs.core,org.glassfish.jersey.server.internal,org.glassfish.jersey.spi,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.client,javax.ws.rs.client,org.glassfish.jersey.internal,org.glassfish.jersey.uri.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.monitoring"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server,org.glassfish.jersey.server.model,javax.annotation,org.glassfish.jersey.internal.util.collection,javax.inject,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.internal.spi,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.server.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.uri,org.glassfish.jersey.server.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.internal.monitoring.jmx,org.glassfish.jersey.internal.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.util.collection"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.sonar"/>
+		<p n="version" t="version" v="2.22.1"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.oauth1.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.server.oauth1,javax.ws.rs.container,org.glassfish.jersey.oauth1.signature,javax.inject,javax.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.authentication"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.client.internal,org.glassfish.jersey.internal.util,javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.uri,org.glassfish.jersey.message,org.glassfish.jersey.client,javax.annotation,javax.ws.rs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.mvc"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.server.mvc.internal,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.processor"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.model.internal,javax.ws.rs.container,org.glassfish.jersey.server,javax.inject,org.glassfish.jersey.server.model,org.glassfish.jersey.process,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.xml.bind,org.glassfish.jersey.internal.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.reflection,javax.inject,org.glassfish.hk2.api,org.glassfish.hk2.utilities.general,org.glassfish.hk2.internal,org.glassfish.hk2.utilities.binding"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.media.multipart"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.media.multipart.internal,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.core,org.glassfish.jersey.server.model,org.glassfish.jersey.internal.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.api.messaging"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="javax.inject,org.glassfish.hk2.api"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.internal,org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml,javax.xml.parsers,javax.xml.namespace,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.inject,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.extension"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.api"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.jackson"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.message.filtering,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.jackson.internal,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.osgiresourcelocator"/>
+		<p n="version" t="version" v="1.0.1"/>
+		<p n=":uses" v="org.osgi.framework"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.message.filtering.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.internal.generators"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.xml.bind.annotation,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.xml.parsers,javax.inject,org.glassfish.jersey.server.model,javax.ws.rs.core,javax.xml.namespace,javax.xml.transform,javax.xml.transform.stream,javax.xml.bind"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.process"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.sonar"/>
+		<p n="version" t="version" v="2.22.1"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.message.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.spi,javax.activation,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,javax.xml.transform,org.glassfish.jersey.uri,org.glassfish.jersey.uri.internal,org.glassfish.hk2.utilities.binding,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities,org.glassfish.jersey,javax.imageio,javax.imageio.stream,javax.imageio.spi,javax.xml.parsers,javax.xml.transform.dom,org.w3c.dom,org.xml.sax,javax.xml.transform.sax,javax.xml.transform.stream,javax.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.message.internal,org.glassfish.jersey.uri.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.spi,javax.ws.rs.ext,org.glassfish.hk2.api,javax.ws.rs.core,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.jersey,org.glassfish.jersey.message,org.glassfish.jersey.internal.l10n,org.osgi.framework,org.glassfish.hk2.utilities"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.model"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.xml.bind.annotation,javax.xml.namespace"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.process"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.container,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.process.internal,org.glassfish.jersey.process,javax.ws.rs,org.glassfish.jersey.server.spi,org.glassfish.jersey.internal.util.collection,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.internal.monitoring,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey.internal.inject,org.glassfish.jersey.spi,org.glassfish.hk2.utilities.binding"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.oauth1.signature.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.media.multipart.file"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.core,org.glassfish.jersey.media.multipart"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.cache.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.cache"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.internal.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.api,javax.servlet,org.glassfish.jersey.server,javax.servlet.http,org.glassfish.jersey.server.spi"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.spi.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.inject,javax.ws.rs,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server,javax.ws.rs.core,org.glassfish.jersey.spi"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.async"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.servlet,org.glassfish.jersey.servlet.init.internal,org.glassfish.jersey.servlet.spi,javax.servlet.http"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.oauth2.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.media.sse.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.annotation,org.glassfish.jersey.internal.spi,javax.ws.rs,org.glassfish.jersey.media.sse,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.client,javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.process,javax.net.ssl"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs,org.glassfish.jersey.client.internal,org.glassfish.jersey.message,org.glassfish.jersey.internal,javax.ws.rs.core,org.glassfish.jersey.internal.util,javax.ws.rs.ext,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message.internal,org.glassfish.hk2.utilities,org.glassfish.jersey.internal.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.spi,org.glassfish.jersey.process.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.client.spi,org.glassfish.jersey,javax.ws.rs.client,javax.net.ssl"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.mvc.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.spi,org.glassfish.jersey.server,org.glassfish.jersey.server.mvc.internal,org.glassfish.jersey.server.mvc,javax.inject,org.glassfish.jersey.server.model,org.glassfish.hk2.api,javax.ws.rs.core,javax.servlet,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.ws.rs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal,org.glassfish.jersey.process,javax.annotation,javax.ws.rs,javax.ws.rs.ext,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities,org.glassfish.hk2.api,javax.inject,org.glassfish.hk2.utilities.reflection,org.glassfish.hk2.utilities.general,org.glassfish.hk2.extension,org.glassfish.hk2.osgiresourcelocator"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.init"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.servlet.internal,org.glassfish.jersey.servlet.internal.spi,javax.ws.rs,org.glassfish.jersey.servlet,org.glassfish.jersey.server,javax.ws.rs.ext,javax.servlet.annotation,javax.servlet,org.glassfish.jersey.servlet.init.internal,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal.scanning"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.ws.rs,javax.ws.rs.ext,org.glassfish.jersey.server,org.glassfish.jersey.uri"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.reflection.internal"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.utilities.reflection,javax.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.general"/>
+		<p n="version" t="version" v="2.4.0"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.l10n"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal,org.glassfish.hk2.osgiresourcelocator,org.glassfish.jersey.internal.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.jaxb.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.xml.bind.annotation,org.glassfish.jersey.message.internal,javax.ws.rs,javax.ws.rs.ext,javax.xml.stream,javax.xml.bind,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.internal.util,javax.xml.parsers,org.xml.sax,javax.xml.transform.sax,javax.xml.transform,javax.xml.transform.stream,javax.inject,org.glassfish.hk2.api,javax.xml.transform.dom,org.w3c.dom,org.glassfish.jersey.internal.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,javax.xml.validation,org.xml.sax.helpers,javax.xml"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.client,org.glassfish.jersey.internal.util.collection,javax.ws.rs.client,javax.net.ssl,javax.ws.rs.core,javax.ws.rs,org.glassfish.jersey.client.spi,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.oauth1"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.oauth1.signature,org.glassfish.jersey.filter,javax.ws.rs,org.glassfish.jersey.client.oauth1.internal,org.glassfish.jersey.message,javax.annotation,javax.inject,org.glassfish.jersey.uri,javax.ws.rs.ext"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.utilities.binding"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="org.glassfish.hk2.api,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.reflection,javax.inject"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.wadl.config"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server.wadl,javax.ws.rs,org.glassfish.jersey.server.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.wadl.internal.generators"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.client.oauth2"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.message,javax.ws.rs,org.glassfish.jersey.internal,javax.ws.rs.ext,javax.inject,org.glassfish.jersey.jackson,org.glassfish.jersey.client.oauth2.internal,javax.annotation,org.glassfish.jersey.message.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.spi"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.servlet.http"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.oauth1.signature"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.oauth1.signature.internal,javax.crypto.spec,org.glassfish.jersey.uri,javax.crypto,javax.inject,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,javax.ws.rs.core,org.glassfish.jersey.spi"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.hk2.api"/>
+		<p n="version" t="version" v="2.4.0"/>
+		<p n=":uses" v="javax.inject,org.glassfish.hk2.utilities,org.glassfish.hk2.extension,org.glassfish.hk2.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.message"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.util,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.spi,javax.inject,javax.ws.rs,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey.message.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.filter"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="javax.annotation,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.client,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.internal.inject"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.api,org.glassfish.hk2.utilities,org.glassfish.jersey.process.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.internal.util,javax.ws.rs,org.glassfish.hk2.extension,org.glassfish.jersey.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.model,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.spi,javax.ws.rs.client,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.servlet.init.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.internal.l10n"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.monitoring"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server,org.glassfish.jersey.server.model,javax.ws.rs,org.glassfish.jersey.spi,javax.ws.rs.container,javax.ws.rs.ext"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="org.glassfish.jersey.server.internal"/>
+		<p n="version" t="version" v="2.22.1"/>
+		<p n=":uses" v="org.glassfish.jersey.server,org.glassfish.jersey.internal.util,org.glassfish.jersey.server.spi,org.glassfish.hk2.utilities.binding,javax.ws.rs.container,javax.inject,org.glassfish.hk2.utilities,org.glassfish.jersey.model,org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.process.internal,javax.annotation,javax.ws.rs,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.core,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.model.internal,org.glassfish.jersey.internal"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="javax.inject"/>
+		<p n="version" t="version" v="1.0.0"/>
+	</capability>
+	<require name="package" filter="(package=javax.activation)" extend="false" multiple="false" optional="false">[Import: javax.activation - null - required</require>
+	<require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.annotation - [1.2.0,2.0.0) - required</require>
+	<require name="package" filter="(package=javax.crypto)" extend="false" multiple="false" optional="false">[Import: javax.crypto - null - required</require>
+	<require name="package" filter="(package=javax.crypto.spec)" extend="false" multiple="false" optional="false">[Import: javax.crypto.spec - null - required</require>
+	<require name="package" filter="(package=javax.imageio)" extend="false" multiple="false" optional="false">[Import: javax.imageio - null - required</require>
+	<require name="package" filter="(package=javax.imageio.spi)" extend="false" multiple="false" optional="false">[Import: javax.imageio.spi - null - required</require>
+	<require name="package" filter="(package=javax.imageio.stream)" extend="false" multiple="false" optional="false">[Import: javax.imageio.stream - null - required</require>
+	<require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.inject - [1.0.0,2.0.0) - required</require>
+	<require name="package" filter="(package=javax.management)" extend="false" multiple="false" optional="false">[Import: javax.management - null - required</require>
+	<require name="package" filter="(package=javax.naming)" extend="false" multiple="false" optional="false">[Import: javax.naming - null - required</require>
+	<require name="package" filter="(package=javax.net.ssl)" extend="false" multiple="false" optional="false">[Import: javax.net.ssl - null - required</require>
+	<require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">[Import: javax.servlet - [2.3.0,4.0.0) - optional</require>
+	<require name="package" filter="(&amp;(package=javax.servlet.annotation)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">[Import: javax.servlet.annotation - [2.3.0,4.0.0) - optional</require>
+	<require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">[Import: javax.servlet.http - [2.3.0,4.0.0) - optional</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.core - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.ext - [2.0.0,3.0.0) - required</require>
+	<require name="package" filter="(package=javax.xml)" extend="false" multiple="false" optional="false">[Import: javax.xml - null - required</require>
+	<require name="package" filter="(package=javax.xml.bind)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind - null - required</require>
+	<require name="package" filter="(package=javax.xml.bind.annotation)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind.annotation - null - required</require>
+	<require name="package" filter="(package=javax.xml.bind.annotation.adapters)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind.annotation.adapters - null - required</require>
+	<require name="package" filter="(package=javax.xml.datatype)" extend="false" multiple="false" optional="false">[Import: javax.xml.datatype - null - required</require>
+	<require name="package" filter="(package=javax.xml.namespace)" extend="false" multiple="false" optional="false">[Import: javax.xml.namespace - null - required</require>
+	<require name="package" filter="(package=javax.xml.parsers)" extend="false" multiple="false" optional="false">[Import: javax.xml.parsers - null - required</require>
+	<require name="package" filter="(package=javax.xml.stream)" extend="false" multiple="false" optional="false">[Import: javax.xml.stream - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform.dom)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform.dom - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform.sax)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform.sax - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform.stream)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform.stream - null - required</require>
+	<require name="package" filter="(package=javax.xml.validation)" extend="false" multiple="false" optional="false">[Import: javax.xml.validation - null - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.hk2.extension)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.hk2.extension - [2.4.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.cache)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.hk2.utilities.cache - [2.4.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.general)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.hk2.utilities.general - [2.4.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.reflection)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.hk2.utilities.reflection - [2.4.0,3.0.0) - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.reflection.internal)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.hk2.utilities.reflection.internal - [2.4.0,3.0.0) - required</require>
+	<require name="package" filter="(package=org.osgi.framework)" extend="false" multiple="false" optional="false">[Import: org.osgi.framework - null - required</require>
+	<require name="package" filter="(package=org.w3c.dom)" extend="false" multiple="false" optional="false">[Import: org.w3c.dom - null - required</require>
+	<require name="package" filter="(package=org.w3c.dom.bootstrap)" extend="false" multiple="false" optional="false">[Import: org.w3c.dom.bootstrap - null - required</require>
+	<require name="package" filter="(package=org.w3c.dom.ls)" extend="false" multiple="false" optional="false">[Import: org.w3c.dom.ls - null - required</require>
+	<require name="package" filter="(package=org.xml.sax)" extend="false" multiple="false" optional="false">[Import: org.xml.sax - null - required</require>
+	<require name="package" filter="(package=org.xml.sax.helpers)" extend="false" multiple="false" optional="false">[Import: org.xml.sax.helpers - null - required</require>
+</resource>
+
+</repository>

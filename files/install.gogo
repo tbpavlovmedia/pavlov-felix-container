@@ -1,0 +1,23 @@
+repos remove http://felix.apache.org/obr/releases.xml
+
+repos add file:///tmp/felix/repository.xml
+repos add file:///tmp/jaxrs/repository.xml
+
+obr:deploy -ro -s org.apache.felix.http.servlet-api
+obr:deploy -ro -s org.apache.felix.http.api
+obr:deploy -ro -s org.apache.felix.configadmin
+obr:deploy -ro -s org.apache.felix.eventadmin
+obr:deploy -ro -s org.apache.felix.fileinstall
+obr:deploy -ro -s org.apache.felix.log
+obr:deploy -ro -s org.apache.felix.metatype
+obr:deploy -ro -s org.apache.felix.scr
+obr:deploy -ro -s org.apache.felix.webconsole
+obr:deploy -ro -s org.apache.felix.webconsole.plugins.ds
+obr:deploy -ro -s org.apache.felix.webconsole.plugins.event
+obr:deploy -ro -s org.apache.felix.webconsole.plugins.obr
+obr:deploy -ro -s org.apache.felix.http.whiteboard
+obr:deploy -ro -s org.apache.felix.http.jetty
+
+obr:deploy -ro -s com.eclipsesource.jaxrs.publisher
+
+lb
