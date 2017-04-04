@@ -34,7 +34,6 @@ RUN mkdir -p /opt/felix && \
     tar xvzf /tmp/${felix_package} && \
     ln -s /opt/felix/felix-framework-${felix_version} /opt/felix/current
 
-
 # We set up configuration here so that our obr installs go nicely
 ADD files/config.properties /opt/felix/current/conf/
 
@@ -45,17 +44,22 @@ ADD files/config.properties /opt/felix/current/conf/
 RUN mkdir -p /opt/felix/current/configs
 
 #
-# Finally expose our webports so you can use this with something like
-# https://github.com/jwilder/nginx-proxy
+# Add OBR repositories for installation
 #
-
 ADD files/install.gogo /tmp
 ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 
+#
+# Install bundles with OBR
+#
 WORKDIR /opt/felix/current
-RUN java -Dgosh.args=/tmp/install.gogo -jar bin/felix.jar
+RUN java -Dgosh.args="-x /tmp/install.gogo" -jar bin/felix.jar
 
+#
+# Finally expose our webports so you can use this with something like
+# https://github.com/jwilder/nginx-proxy
+#
 EXPOSE 8080 8000
 VOLUME ["/opt/felix/current/configs", "/opt/felix/current/load" ]
 

@@ -1,5 +1,8 @@
+# Make sure we have obr loaded
 repos remove http://felix.apache.org/obr/releases.xml
 
+# This is the pavlov JAX-RS provider
+repos add https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/1.0-release/obr/repository.xml
 repos add file:///tmp/felix/repository.xml
 repos add file:///tmp/jaxrs/repository.xml
 
@@ -18,6 +21,10 @@ obr:deploy -ro -s org.apache.felix.webconsole.plugins.obr
 obr:deploy -ro -s org.apache.felix.http.whiteboard
 obr:deploy -ro -s org.apache.felix.http.jetty
 
-obr:deploy -ro -s com.eclipsesource.jaxrs.publisher
+obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
+obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.webconsole
+obr:deploy -ro -s com.eclipsesource.jaxrs.swagger-all
 
 lb
+
+log error

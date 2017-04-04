@@ -4,7 +4,7 @@ pavlov-felix-container
 This project is a docker container to help get moving quickly running and OSGi system
 using Apache Felix.
 
-It starts on a ubunutu 14.04 lts image, adds Oracle Java 8, and then sets up Felix with
+It starts on a ubunutu 16.04 lts image, adds OpenJDK Java 8, and then sets up Felix with
 a number of common bundles that are used by Pavlov Media.
 
 It also sets up a number of things that you can use to make it convient to run with Docker.

@@ -3,31 +3,465 @@
 
 <repository lastmodified="201608242160136.278" name="cae0e949-e15e-428a-8e6f-62283cf0cfaf">
 
-<resource id="13edf2eb-b087-463f-a4f8-82e8b95c0850" symbolicname="com.eclipsesource.jaxrs.publisher" version="5.0.0.201506221200" presentationname="%Bundle-Name" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/publisher/5.0/publisher-5.0.jar">
-	<size>33379</size>
+<resource id="45060f8e-11fb-4e0d-847a-74ef26de53ca" symbolicname="com.eclipsesource.jaxrs.swagger-all" version="1.5.7" presentationname="swagger-all" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/swagger-all/1.5.7/swagger-all-1.5.7.jar">
+	<size>6886988</size>
 	<require name="ee" filter="(ee=JavaSE-1.7)" extend="false" multiple="false" optional="false">Execution Environment (ee=JavaSE-1.7)</require>
 	<capability name="bundle">
-		<p n="presentationname" v="%Bundle-Name"/>
-		<p n="symbolicname" v="com.eclipsesource.jaxrs.publisher"/>
+		<p n="presentationname" v="swagger-all"/>
+		<p n="symbolicname" v="com.eclipsesource.jaxrs.swagger-all"/>
 		<p n="manifestversion" v="2"/>
-		<p n="version" t="version" v="5.0.0.201506221200"/>
+		<p n="version" t="version" v="1.5.7"/>
 	</capability>
 	<capability name="package">
-		<p n="package" v="com.eclipsesource.jaxrs.publisher"/>
-		<p n="version" t="version" v="5.0.0"/>
+		<p n="package" v="io.swagger.models.refs"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
 	</capability>
-	<require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.servlet - [2.3.0,4.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.servlet.http - [2.3.0,4.0.0) - required</require>
+	<capability name="package">
+		<p n="package" v="io.swagger.converter"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.models,io.swagger.models.properties,com.fasterxml.jackson.databind,io.swagger.util,com.fasterxml.jackson.databind.type,io.swagger.jackson"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.models.auth"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="com.fasterxml.jackson.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jersey.listing"/>
+		<p n="version" t="version" v="1.5.7"/>
+		<p n=":uses" v="javax.ws.rs,io.swagger.jaxrs.listing"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.config"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.core.filter,io.swagger.models"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jackson"/>
+		<p n="version" t="version" v="1.5.7"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.module,io.swagger.models.properties,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,io.swagger.annotations,io.swagger.models,javax.xml.bind.annotation,io.swagger.converter,io.swagger.util,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jersey.config"/>
+		<p n="version" t="version" v="1.5.7"/>
+		<p n=":uses" v="javax.servlet,io.swagger.jaxrs.config"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.models"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,javax.xml.bind.annotation,io.swagger.models.parameters,io.swagger.models.refs,io.swagger.models.auth"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jaxrs"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="javax.ws.rs,io.swagger.models.properties,io.swagger.models.parameters,io.swagger.jaxrs.ext,io.swagger.converter,com.fasterxml.jackson.databind,io.swagger.util,com.fasterxml.jackson.databind.type,io.swagger.annotations,io.swagger.jaxrs.utils,io.swagger.models,io.swagger.jaxrs.config,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jaxrs.utils"/>
+		<p n="version" t="version" v="1.5.7"/>
+		<p n=":uses" v="io.swagger.models,io.swagger.models.parameters,io.swagger.jaxrs.ext,io.swagger.util,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.core.filter"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.models.properties,io.swagger.models,io.swagger.models.parameters,io.swagger.model"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.models.properties"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.models,com.fasterxml.jackson.annotation,io.swagger.models.refs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.model"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.models"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jersey"/>
+		<p n="version" t="version" v="1.5.7"/>
+		<p n=":uses" v="org.glassfish.jersey.media.multipart,com.fasterxml.jackson.databind,javax.ws.rs,io.swagger.models.properties,io.swagger.jaxrs.ext,com.fasterxml.jackson.databind.introspect,io.swagger.util,io.swagger.models,io.swagger.models.parameters,io.swagger.converter"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.util"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.models.properties,io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models.auth,io.swagger.models,io.swagger.models.parameters,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.annotation,com.fasterxml.jackson.dataformat.yaml,io.swagger.converter,com.fasterxml.jackson.databind.type"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jaxrs.config"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.jaxrs,javax.ws.rs,io.swagger.config,javax.servlet,io.swagger.core.filter,io.swagger.annotations,io.swagger.models,javax.servlet.http,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jaxrs.ext"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models.parameters,com.fasterxml.jackson.databind.type,io.swagger.jaxrs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.annotations"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.jaxrs.listing"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,javax.ws.rs,io.swagger.jaxrs,io.swagger.config,io.swagger.util,io.swagger.annotations,javax.servlet,io.swagger.core.filter,io.swagger.models,io.swagger.jaxrs.config,javax.ws.rs.core,javax.ws.rs.ext"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="io.swagger.models.parameters"/>
+		<p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+		<p n=":uses" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,io.swagger.models,io.swagger.models.refs"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.util"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.com.google.gdata.util.common.base,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.sym"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.jsonschema"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.representer"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.jsontype"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.core,com.fasterxml.jackson.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.module"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.ser"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.util"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.deser.impl"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.json.annotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.io"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.json"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core.io,com.fasterxml.jackson.core,com.fasterxml.jackson.core.sym,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.jsontype.impl"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.core.util,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.deser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml.deser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io,javax.xml.stream,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.introspect"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.datatype.joda.deser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.deser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.introspect"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.databind.ser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.type"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.serializer"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.annotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.module.jaxb.deser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.node,javax.xml.parsers"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder"/>
+		<p n="version" t="version" v="2.4.5"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.ser.impl"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.core.io,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.type"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.util"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml.util"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core,javax.xml.stream,com.fasterxml.jackson.dataformat.xml.ser,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.cfg,javax.xml.namespace,com.fasterxml.jackson.databind.type"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.annotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml.jaxb"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.databind.type"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.node"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.core.base"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.representer,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader,com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor,com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.serializer"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.ser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.ext,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonschema"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.cfg"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.ser"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.datatype.joda.ser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.deser.std"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.core.io"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.cfg"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.jaxrs.annotation,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.core,javax.ws.rs.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.extensions.compactnotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.sym,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.type"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.json"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,javax.ws.rs,com.fasterxml.jackson.jaxrs.cfg,javax.ws.rs.ext,com.fasterxml.jackson.core,com.fasterxml.jackson.jaxrs.base,javax.ws.rs.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.jaxrs.json.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.jsonFormatVisitors"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.datatype.joda.deser.key"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.util"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.com.google.gdata.util.common.base"/>
+		<p n="version" t="version" v="2.4.5"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.type"/>
+		<p n="version" t="version" v="2.4.5"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.annotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.deser"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.datatype.joda"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.datatype.joda.deser.key,com.fasterxml.jackson.core,com.fasterxml.jackson.datatype.joda.deser,com.fasterxml.jackson.datatype.joda.ser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.base"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core.json,com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.exc"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.jaxrs.base"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind,javax.ws.rs.ext,javax.ws.rs.core,com.fasterxml.jackson.core,com.fasterxml.jackson.jaxrs.cfg,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.jaxrs.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.module.jaxb.ser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.format,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.dataformat.xml.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.dataformat.xml.ser,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.dataformat.xml.deser,com.fasterxml.jackson.core.util,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core.io,javax.xml.stream,javax.xml.transform,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.jsontype"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.ext"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,javax.xml.datatype,javax.xml.namespace,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.ser,javax.xml.parsers,com.fasterxml.jackson.databind.node"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml.ser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.base,javax.xml.namespace,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core,javax.xml.stream,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.cfg"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.deser"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.ext,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonFormatVisitors"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.xml.annotation"/>
+		<p n="version" t="version" v="2.4.5"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.module.jaxb"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,javax.xml.bind.annotation.adapters,com.fasterxml.jackson.databind.type,javax.xml.bind.annotation,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.module.jaxb.deser,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,javax.xml.bind,com.fasterxml.jackson.module.jaxb.ser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.core.util"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.core.format"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.databind.ser.std"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.annotation"/>
+	</capability>
+	<capability name="package">
+		<p n="package" v="com.fasterxml.jackson.dataformat.yaml"/>
+		<p n="version" t="version" v="2.4.5"/>
+		<p n=":uses" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.json,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.core.base,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+	</capability>
+	<require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">[Import: javax.servlet - [2.3.0,4.0.0) - optional</require>
+	<require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">[Import: javax.servlet.http - [2.3.0,4.0.0) - optional</require>
 	<require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs - [2.0.0,3.0.0) - required</require>
 	<require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.core - [2.0.0,3.0.0) - required</require>
 	<require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: javax.ws.rs.ext - [2.0.0,3.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.glassfish.jersey.internal)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.internal - [2.3.0,3.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.glassfish.jersey.server)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.server - [2.3.0,3.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.servlet - [2.3.0,3.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.osgi.framework)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.framework - [1.5.0,2.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.osgi.service.cm)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.service.cm - [1.2.0,2.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.osgi.service.http)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.service.http - [1.2.0,2.0.0) - required</require>
-	<require name="package" filter="(&amp;(package=org.osgi.util.tracker)(&amp;(version&gt;=1.4.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">[Import: org.osgi.util.tracker - [1.4.0,2.0.0) - required</require>
+	<require name="package" filter="(package=javax.xml.bind)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind - null - required</require>
+	<require name="package" filter="(package=javax.xml.bind.annotation)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind.annotation - null - required</require>
+	<require name="package" filter="(package=javax.xml.bind.annotation.adapters)" extend="false" multiple="false" optional="false">[Import: javax.xml.bind.annotation.adapters - null - required</require>
+	<require name="package" filter="(package=javax.xml.datatype)" extend="false" multiple="false" optional="false">[Import: javax.xml.datatype - null - required</require>
+	<require name="package" filter="(package=javax.xml.namespace)" extend="false" multiple="false" optional="false">[Import: javax.xml.namespace - null - required</require>
+	<require name="package" filter="(package=javax.xml.parsers)" extend="false" multiple="false" optional="false">[Import: javax.xml.parsers - null - required</require>
+	<require name="package" filter="(package=javax.xml.stream)" extend="false" multiple="false" optional="false">[Import: javax.xml.stream - null - required</require>
+	<require name="package" filter="(package=javax.xml.stream.events)" extend="false" multiple="false" optional="false">[Import: javax.xml.stream.events - null - required</require>
+	<require name="package" filter="(package=javax.xml.stream.util)" extend="false" multiple="false" optional="false">[Import: javax.xml.stream.util - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform - null - required</require>
+	<require name="package" filter="(package=javax.xml.transform.dom)" extend="false" multiple="false" optional="false">[Import: javax.xml.transform.dom - null - required</require>
+	<require name="package" filter="(&amp;(package=org.glassfish.jersey.media.multipart)(&amp;(version&gt;=2.22.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">[Import: org.glassfish.jersey.media.multipart - [2.22.0,3.0.0) - required</require>
 </resource>
 
 <resource id="0f0e9c8e-0a56-4afa-bfa6-51467dae0bb1" symbolicname="com.eclipsesource.jaxrs.jersey-all" version="2.22.1" presentationname="jersey-all" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-all/2.22.1/jersey-all-2.22.1.jar">
