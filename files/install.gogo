@@ -1,3 +1,7 @@
+lb
+
+help
+
 # Make sure we have obr loaded
 repos remove http://felix.apache.org/obr/releases.xml
 

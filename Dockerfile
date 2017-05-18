@@ -24,15 +24,22 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless
 
 # Install Felix
-ENV felix_version 5.6.0
-ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
+ENV felix_version 5.6.2
+ENV felix_package=org.apache.felix.main.distribution-${felix_version}-update1.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 
-ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} /tmp/
+ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}-update1/${felix_package} /tmp/
 RUN mkdir -p /opt/felix && \
     cd /opt/felix && \
     tar xvzf /tmp/${felix_package} && \
     ln -s /opt/felix/felix-framework-${felix_version} /opt/felix/current
+
+# Use a newer bundle repo, hopefully it addresses bugs in 2.0.6 and 2.0.8
+# We have to put this first or it will error out installing itself
+ENV felix_bundlerepository 2.0.10
+ADD ${felix_base}/org.apache.felix.bundlerepository/${felix_bundlerepository}/org.apache.felix.bundlerepository-${felix_bundlerepository}.jar /opt/felix/current/bundle/
+RUN ls /opt/felix/current/bundle
+RUN rm -f /opt/felix/current/bundle/org.apache.felix.bundlerepository-2.0.8.jar
 
 # We set up configuration here so that our obr installs go nicely
 ADD files/config.properties /opt/felix/current/conf/
