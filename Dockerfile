@@ -54,7 +54,7 @@ ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 # Install bundles with OBR
 #
 WORKDIR /opt/felix/current
-RUN java -Dgosh.args="-x /tmp/install.gogo" -jar bin/felix.jar
+RUN java -Dgosh.args="/tmp/install.gogo" -jar bin/felix.jar
 
 #
 # Finally expose our webports so you can use this with something like
