@@ -49,6 +49,8 @@ RUN mkdir -p /opt/felix/current/configs
 ADD files/install.gogo /tmp
 ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
+ADD files/slf4j.repository /tmp/slf4j/repository.xml
+ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
 
 #
 # Install bundles with OBR
