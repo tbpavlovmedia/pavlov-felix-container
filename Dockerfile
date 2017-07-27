@@ -21,14 +21,16 @@ ENV DEBIAN_FRONTEND noninteractive
 ##
 # Set up Open JDK8
 #
-RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless
+RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless wget
 
 # Install Felix
 ENV felix_version 5.6.4
 ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 
-ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} /tmp/
+# ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} /tmp
+RUN wget ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} -O /tmp/${felix_package}
+RUN ls /tmp
 RUN mkdir -p /opt/felix && \
     cd /opt/felix && \
     tar xvzf /tmp/${felix_package} && \
@@ -51,6 +53,7 @@ ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
 ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
+ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
 #
 # Install bundles with OBR
