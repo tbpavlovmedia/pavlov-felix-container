@@ -24,7 +24,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless wget
 
 # Install Felix
-ENV felix_version 5.6.4
+ENV felix_version 6.0.0
 ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 
