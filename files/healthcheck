@@ -1,0 +1,41 @@
+#!/bin/bash
+
+## Healthcheck for a generic µService
+## This will mainly check iron to see if it is up
+## and if it is configured
+
+# Is Iron even running?
+curl -s --fail http://localhost:8080/iron > /dev/null
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+    echo "Iron not running"
+    exit 1
+fi
+
+# see if we are marked ready
+RUNNING=`curl -s --fail http://localhost:8080/iron/dhc.osgi.ready.impl.RunningTrackerImpl`
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+    echo "Failed to pull running status"
+    exit 1
+fi
+
+CONFIGURED=`echo $RUNNING | jq .parameters.configured`
+if [ "$CONFIGURED" != "true" ]; then
+    echo "Container not yet configured"
+    exit 1
+fi
+
+if [ -z "$dtos_to_check" ] ; then
+    echo "No DTOs to check, exiting"
+    exit 0
+fi
+
+for DTO in $dtos_to_check; do
+    GREP=`curl -I -s --fail -X OPTIONS http://localhost:8080/services/$DTO | grep DtoName`
+    STATUS=$?
+    if [ $STATUS -ne 0 ]; then
+        echo "Failed check dto $DTO"
+        exit 1
+    fi
+done
