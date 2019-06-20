@@ -21,14 +21,16 @@ ENV DEBIAN_FRONTEND noninteractive
 ##
 # Set up Open JDK8
 #
-RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless
+RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless wget curl jq
 
 # Install Felix
-ENV felix_version 5.4.0
+ENV felix_version 5.6.4
 ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 
-ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} /tmp/
+# ADD ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} /tmp
+RUN wget ${felix_base}/org.apache.felix.main.distribution/${felix_version}/${felix_package} -O /tmp/${felix_package}
+RUN ls /tmp
 RUN mkdir -p /opt/felix && \
     cd /opt/felix && \
     tar xvzf /tmp/${felix_package} && \
@@ -49,12 +51,15 @@ RUN mkdir -p /opt/felix/current/configs
 ADD files/install.gogo /tmp
 ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
+ADD files/slf4j.repository /tmp/slf4j/repository.xml
+ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
+ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
 #
 # Install bundles with OBR
 #
 WORKDIR /opt/felix/current
-RUN java -Dgosh.args="-x /tmp/install.gogo" -jar bin/felix.jar
+RUN java -Dgosh.args="/tmp/install.gogo" -jar bin/felix.jar
 
 #
 # Finally expose our webports so you can use this with something like
@@ -65,5 +70,10 @@ VOLUME ["/opt/felix/current/configs", "/opt/felix/current/load" ]
 
 # You can override these at runtime, and you are encouraged to turn off debugger support in production
 ENV JVM_OPTIONS="-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+
+ADD files/healthcheck /opt/healthcheck
+RUN chmod +x /opt/healthcheck
+
+HEALTHCHECK --interval=15s --start-period=30s --retries=1 CMD /opt/healthcheck
 
 CMD exec java $JVM_OPTIONS -jar bin/felix.jar
