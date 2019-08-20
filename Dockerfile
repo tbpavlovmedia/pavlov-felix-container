@@ -53,7 +53,7 @@ ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
 ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
-ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
+ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.3.jar /opt/felix/current/bundle
 
 #
 # Install bundles with OBR
