@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Shawn Dempsay <sdempsay@pavlovmedia.com>
 
 ##
@@ -21,10 +21,12 @@ ENV DEBIAN_FRONTEND noninteractive
 ##
 # Set up Open JDK8
 #
-RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless wget
+# RUN apt-get update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless wget
+# RUN apt-get update && apt-get install -y default-jdk wget
+RUN apt-get update && apt-get install -y openjdk-11-jre-headless openjdk-11-jdk-headless wget nano
 
 # Install Felix
-ENV felix_version 6.0.0
+ENV felix_version 6.0.3
 ENV felix_package=org.apache.felix.main.distribution-${felix_version}.tar.gz
 ENV felix_base http://repo1.maven.org/maven2/org/apache/felix
 
@@ -52,7 +54,8 @@ ADD files/install.gogo /tmp
 ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
-ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
+# ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
+ADD files/pavlovjax/ /tmp/pavlovjax/
 ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
 #
