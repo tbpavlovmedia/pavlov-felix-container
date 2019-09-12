@@ -6,10 +6,6 @@ repos add file:///tmp/jaxrs/repository.xml
 repos add file:///tmp/slf4j/repository.xml
 repos add file:///tmp/pavlovjax/repository.xml
 
-echo
-obr:list
-echo
-
 echo "Installing slf4j"
 # obr:deploy -s slf4j.api
 # obr:deploy -s slf4j.simple
@@ -31,17 +27,13 @@ obr:deploy -ro -s org.apache.felix.http.whiteboard
 obr:deploy -ro -s org.apache.felix.http.jetty
 
 echo "Test"
-#obr:deploy -ro -s javax.annotation-api
-#obr:deploy -ro -s org.glassfish.hk2.api
-#obr:deploy -ro -s org.glassfish.hk2.locator
-#obr:deploy -ro -s org.glassfish.hk2.utils
-#obr:deploy -ro -s jakarta.validation.jakarta.validation-api
-#obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
-#obr:deploy -ro -s javax.servlet-api
-
-echo
-obr:list
-echo
+obr:deploy -ro -s javax.annotation-api
+obr:deploy -ro -s org.glassfish.hk2.api
+obr:deploy -ro -s org.glassfish.hk2.locator
+obr:deploy -ro -s org.glassfish.hk2.utils
+obr:deploy -ro -s jakarta.validation.jakarta.validation-api
+obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
+obr:deploy -ro -s javax.servlet-api
 
 echo "Installing JAX-RS"
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
