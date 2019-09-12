@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190909061942.554">
+<repository lastmodified="20190911102529.112">
    <resource id="org.glassfish.hk2.external.aopalliance-repackaged/2.6.1" symbolicname="org.glassfish.hk2.external.aopalliance-repackaged" version="2.6.1" presentationname="aopalliance version 1.0 repackaged as a module" uri="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar">
       <description>Dependency Injection Kernel</description>
       <size>27006</size>
@@ -1302,7 +1302,7 @@
       <require name="package" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom</require>
       <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
    </resource>
-   <resource id="org.glassfish.jersey.media.jersey-media-multipart/2.29.0" symbolicname="org.glassfish.jersey.media.jersey-media-multipart" version="2.29.0" presentationname="jersey-media-multipart" uri="http://nexus.slub-dresden.de:8081/nexus/content/shadows/central-m1/org.glassfish.jersey.media/jars/jersey-media-multipart-2.29.jar">
+   <resource id="org.glassfish.jersey.media.jersey-media-multipart/2.29.0" symbolicname="org.glassfish.jersey.media.jersey-media-multipart" version="2.29.0" presentationname="jersey-media-multipart" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-multipart/2.29/jersey-media-multipart-2.29.jar">
       <description>Jersey Multipart entity providers support module.</description>
       <size>80363</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
@@ -1482,7 +1482,7 @@
       <require name="package" filter="(&amp;(package=org.yaml.snakeyaml.serializer)(&amp;(version&gt;=1.25.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.yaml.snakeyaml.serializer</require>
       <require name="package" filter="(&amp;(package=org.yaml.snakeyaml.tokens)(&amp;(version&gt;=1.25.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.yaml.snakeyaml.tokens</require>
    </resource>
-   <resource id="io.swagger.annotations/1.5.13" symbolicname="io.swagger.annotations" version="1.5.13" presentationname="swagger-annotations" uri="http://central.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar">
+   <resource id="io.swagger.annotations/1.5.13" symbolicname="io.swagger.annotations" version="1.5.13" presentationname="swagger-annotations" uri="https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar">
       <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
       <size>20654</size>
       <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
@@ -1497,7 +1497,7 @@
          <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
       </capability>
    </resource>
-   <resource id="io.swagger.core/1.5.13" symbolicname="io.swagger.core" version="1.5.13" presentationname="swagger-core" uri="https://packages.atlassian.com/maven-external/io/swagger/swagger-core/1.5.13/swagger-core-1.5.13.jar">
+   <resource id="io.swagger.core/1.5.13" symbolicname="io.swagger.core" version="1.5.13" presentationname="swagger-core" uri="https://repo1.maven.org/maven2/io/swagger/swagger-core/1.5.13/swagger-core-1.5.13.jar">
       <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
       <size>111254</size>
       <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
@@ -1796,5 +1796,39 @@
       <require name="package" filter="(&amp;(package=javax.validation.metadata)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.metadata</require>
       <require name="package" filter="(&amp;(package=javax.validation.spi)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.spi</require>
       <require name="package" filter="(&amp;(package=javax.validation.valueextraction)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.valueextraction</require>
+   </resource>
+   <resource id="javax.servlet-api/3.1.0" symbolicname="javax.servlet-api" version="3.1.0" presentationname="Java Servlet API" uri="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+      <description>Java(TM) Servlet 3.1 API Design Specification</description>
+      <size>95806</size>
+      <license>https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="javax.servlet-api"/>
+         <p n="presentationname" v="Java Servlet API"/>
+         <p n="version" t="version" v="3.1.0"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet"/>
+         <p n="uses:" v="javax.servlet.descriptor,javax.servlet.annotation"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.descriptor"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.annotation"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.http"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.annotation)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.descriptor)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.descriptor</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
    </resource>
 </repository>
