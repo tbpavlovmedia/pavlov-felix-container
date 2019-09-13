@@ -30,12 +30,12 @@ echo "Test"
 obr:deploy -ro -s org.glassfish.jersey.media.jersey-media-sse
 obr:deploy -ro -s jakarta.validation.jakarta.validation-api
 obr:deploy -ro -s javax.servlet-api
+obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
 
 #obr:deploy -ro -s javax.annotation-api
 #obr:deploy -ro -s org.glassfish.hk2.api
 #obr:deploy -ro -s org.glassfish.hk2.locator
 #obr:deploy -ro -s org.glassfish.hk2.utils
-#obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
 
 echo "Installing JAX-RS"
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
