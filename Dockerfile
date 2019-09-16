@@ -40,6 +40,8 @@ RUN mkdir -p /opt/felix && \
 
 # We set up configuration here so that our obr installs go nicely
 ADD files/config.properties /opt/felix/current/conf/
+ADD files/system.properties /opt/felix/current/conf/
+ADD files/logging.properties /opt/felix/current/conf/
 
 #
 # Now expose where config manager dumps thigs so we can persist
@@ -72,6 +74,7 @@ EXPOSE 8080 8000
 VOLUME ["/opt/felix/current/configs", "/opt/felix/current/load" ]
 
 # You can override these at runtime, and you are encouraged to turn off debugger support in production
-ENV JVM_OPTIONS="-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+#ENV JVM_OPTIONS="-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"
+ENV JVM_OPTIONS="-Xdebug -agentlib:jdwp=transport=dt_socket,address=*:8000,server=y,suspend=n"
 
 CMD exec java $JVM_OPTIONS -jar bin/felix.jar

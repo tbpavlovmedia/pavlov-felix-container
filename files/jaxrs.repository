@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190912043423.457">
+<repository lastmodified="20190913020756.572">
    <resource id="org.glassfish.hk2.external.aopalliance-repackaged/2.6.1" symbolicname="org.glassfish.hk2.external.aopalliance-repackaged" version="2.6.1" presentationname="aopalliance version 1.0 repackaged as a module" uri="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar">
       <description>Dependency Injection Kernel</description>
       <size>27006</size>
@@ -1868,5 +1868,54 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.server.internal.inject)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.server.internal.inject</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.server.model)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.server.model</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.server.spi.internal)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.server.spi.internal</require>
+   </resource>
+   <resource id="jakarta.ws.rs-api/2.1.5" symbolicname="jakarta.ws.rs-api" version="2.1.5" presentationname="javax.ws.rs-api" uri="https://repo1.maven.org/maven2/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar">
+      <description>Java API for RESTful Web Services (JAX-RS)</description>
+      <size>140262</size>
+      <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="jakarta.ws.rs-api"/>
+         <p n="presentationname" v="javax.ws.rs-api"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.client"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.net.ssl,javax.ws.rs,javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.ws.rs,javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,javax.xml.namespace"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.ext"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.ws.rs,javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.container"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.sse"/>
+         <p n="version" t="version" v="2.1.5"/>
+         <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.net.ssl</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.client)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.client</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
+      <require name="package" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.namespace</require>
    </resource>
 </repository>
