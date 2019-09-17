@@ -29,17 +29,21 @@ obr:deploy -ro -s org.apache.felix.http.jetty
 
 echo "Test"
 
-# normally explicitly deployed by scr
-obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
-
 # optionally imported by publisher
+#
 obr:deploy -ro -s org.glassfish.jersey.media.jersey-media-sse
 
-# these are required by scr - how are they normally deployed?
+# these are needed by scr - how are they normally deployed?
+#
 obr:deploy -ro -s jakarta.validation.jakarta.validation-api
 obr:deploy -ro -s jakarta.ws.rs-api
 
-# not required
+# moved to scr
+#
+#obr:deploy -ro -s com.eclipsesource.jaxrs.provider.gson
+
+# deployed as transitive dependencies
+#
 #obr:deploy -ro -s javax.servlet-api
 #obr:deploy -ro -s javax.annotation-api
 #obr:deploy -ro -s org.glassfish.hk2.api
