@@ -5,6 +5,7 @@ repos add file:///tmp/felix/repository.xml
 repos add file:///tmp/jaxrs/repository.xml
 repos add file:///tmp/slf4j/repository.xml
 repos add file:///tmp/pavlovjax/repository.xml
+repos add file:///tmp/reflections/repository.xml
 
 echo "Installing slf4j"
 # obr:deploy -s slf4j.api

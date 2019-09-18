@@ -1,0 +1,64 @@
+<repository lastmodified='20190918115157.984'>
+  <resource id='org.reflections/0.9.12' symbolicname='org.reflections' presentationname='Reflections' uri='/tmp/reflections/reflections-0.9.12.jar' version='0.9.12'>
+    <description>Reflections - a Java runtime metadata analysis</description>
+    <size>132219</size>
+    <license>http://www.wtfpl.net/, http://www.opensource.org/licenses/bsd-license.html</license>
+    <category id='JAX-RS'/>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.reflections'/>
+      <p n='presentationname' v='Reflections'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='com.google.common.base,com.google.common.collect,javax.annotation,org.reflections.adapters,org.reflections.scanners,org.reflections.serializers,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections.adapters'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='javassist.bytecode,javax.annotation,org.reflections.vfs'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections.scanners'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='com.google.common.base,com.google.common.collect,javax.annotation,org.reflections,org.reflections.adapters,org.reflections.vfs'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections.serializers'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='org.reflections'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections.util'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='com.google.common.base,javax.annotation,javax.servlet,org.reflections,org.reflections.adapters,org.reflections.scanners,org.reflections.serializers,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.reflections.vfs'/>
+      <p n='version' t='version' v='0.9.12'/>
+      <p n='uses:' v='com.google.common.base,javax.annotation'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.annotation))' extend='false' multiple='false' optional='false'>Import package javax.annotation</require>
+    <require name='package' filter='(&amp;(package=com.google.common.base)(version&gt;=20.0.0)(!(version&gt;=21.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.base;version="[20.0,21)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect)(version&gt;=20.0.0)(!(version&gt;=21.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect;version="[20.0,21)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.io)(version&gt;=20.0.0)(!(version&gt;=21.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.io;version="[20.0,21)"</require>
+    <require name='package' filter='(&amp;(package=com.google.common.util.concurrent)(version&gt;=20.0.0)(!(version&gt;=21.0.0)))' extend='false' multiple='false' optional='false'>Import package com.google.common.util.concurrent;version="[20.0,21)"</require>
+    <require name='package' filter='(&amp;(package=com.google.gson))' extend='false' multiple='false' optional='true'>Import package com.google.gson;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javassist)(version&gt;=3.21.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javassist;version="[3.21,4)"</require>
+    <require name='package' filter='(&amp;(package=javassist.bytecode)(version&gt;=3.21.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javassist.bytecode;version="[3.21,4)"</require>
+    <require name='package' filter='(&amp;(package=javassist.bytecode.annotation)(version&gt;=3.21.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javassist.bytecode.annotation;version="[3.21,4)"</require>
+    <require name='package' filter='(&amp;(package=javassist.expr)(version&gt;=3.21.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javassist.expr;version="[3.21,4)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='true'>Import package javax.servlet;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.dom4j))' extend='false' multiple='false' optional='true'>Import package org.dom4j;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.dom4j.io))' extend='false' multiple='false' optional='true'>Import package org.dom4j.io;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.reflections))' extend='false' multiple='false' optional='false'>Import package org.reflections</require>
+    <require name='package' filter='(&amp;(package=org.reflections.adapters))' extend='false' multiple='false' optional='false'>Import package org.reflections.adapters</require>
+    <require name='package' filter='(&amp;(package=org.reflections.scanners))' extend='false' multiple='false' optional='false'>Import package org.reflections.scanners</require>
+    <require name='package' filter='(&amp;(package=org.reflections.serializers))' extend='false' multiple='false' optional='false'>Import package org.reflections.serializers</require>
+    <require name='package' filter='(&amp;(package=org.reflections.util))' extend='false' multiple='false' optional='false'>Import package org.reflections.util</require>
+    <require name='package' filter='(&amp;(package=org.reflections.vfs))' extend='false' multiple='false' optional='false'>Import package org.reflections.vfs</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.slf4j;resolution:=optional;version="[1.7,2)"</require>
+  </resource>
+</repository>
