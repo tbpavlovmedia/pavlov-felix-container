@@ -33,7 +33,7 @@ echo "Test"
 #
 obr:deploy -ro -s org.glassfish.jersey.media.jersey-media-sse
 
-# these are needed by scr - how are they normally deployed?
+# these are needed, at least indirectly, by publisher
 #
 obr:deploy -ro -s jakarta.validation.jakarta.validation-api
 obr:deploy -ro -s jakarta.ws.rs-api
