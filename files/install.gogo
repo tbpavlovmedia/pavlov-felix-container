@@ -38,9 +38,8 @@ echo "Test"
 # sse deployed in scr - builds container successfully with all uncommented
 #
 obr:deploy -ro -s jakarta.validation.jakarta.validation-api
-#obr:deploy -ro -s jakarta.ws.rs-api
-#obr:deploy -ro -s org.glassfish.jersey.inject.jersey-hk2
-#obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
+obr:deploy -ro -s org.glassfish.jersey.inject.jersey-hk2
+obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
 
 
 echo "Installing JAX-RS"

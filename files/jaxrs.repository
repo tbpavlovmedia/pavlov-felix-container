@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190917065953.172">
+<repository lastmodified="20190918064218.371">
    <resource id="io.swagger.annotations/1.5.13" symbolicname="io.swagger.annotations" version="1.5.13" presentationname="swagger-annotations" uri="https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar">
       <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
       <size>20654</size>
@@ -412,30 +412,6 @@
       <require name="package" filter="(&amp;(package=com.fasterxml.jackson.datatype.jsr310.ser)(&amp;(version&gt;=2.9.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.datatype.jsr310.ser</require>
       <require name="package" filter="(&amp;(package=com.fasterxml.jackson.datatype.jsr310.ser.key)(&amp;(version&gt;=2.9.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.datatype.jsr310.ser.key</require>
    </resource>
-   <resource id="findbugsAnnotations/2.0.0" symbolicname="findbugsAnnotations" version="2.0.0" presentationname="FindbugsAnnotations" uri="https://repo1.maven.org/maven2/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar">
-      <size>74557</size>
-      <capability name="bundle">
-         <p n="symbolicname" v="findbugsAnnotations"/>
-         <p n="presentationname" v="FindbugsAnnotations"/>
-         <p n="version" t="version" v="2.0.0"/>
-         <p n="manifestversion" v="2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="edu.umd.cs.findbugs.annotations"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation.concurrent"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation.meta"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="net.jcip.annotations"/>
-      </capability>
-   </resource>
    <resource id="com.google.gson/2.8.5" symbolicname="com.google.gson" version="2.8.5" presentationname="Gson" uri="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar">
       <description>Gson JSON library</description>
       <size>241622</size>
@@ -789,31 +765,28 @@
       <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
       <require name="package" filter="(&amp;(package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
    </resource>
-   <resource id="jakarta.annotation-api/1.3.4" symbolicname="jakarta.annotation-api" version="1.3.4" presentationname="jakarta.annotation API" uri="https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.4/jakarta.annotation-api-1.3.4.jar">
-      <description>Java(TM) Common Annotations 1.3 API Design Specification</description>
-      <size>25150</size>
+   <resource id="jakarta.annotation-api/1.3.5" symbolicname="jakarta.annotation-api" version="1.3.5" presentationname="Jakarta Annotations API" uri="https://repo1.maven.org/maven2/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar">
+      <description>Jakarta Annotations API</description>
+      <size>25058</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html</license>
       <capability name="bundle">
          <p n="symbolicname" v="jakarta.annotation-api"/>
-         <p n="presentationname" v="jakarta.annotation API"/>
-         <p n="version" t="version" v="1.3.4"/>
+         <p n="presentationname" v="Jakarta Annotations API"/>
+         <p n="version" t="version" v="1.3.5"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
-         <p n="package" v="javax.annotation"/>
-         <p n="version" t="version" v="1.3.4"/>
-      </capability>
-      <capability name="package">
          <p n="package" v="javax.annotation.security"/>
-         <p n="version" t="version" v="1.3.4"/>
+         <p n="version" t="version" v="1.3.5"/>
       </capability>
       <capability name="package">
          <p n="package" v="javax.annotation.sql"/>
-         <p n="version" t="version" v="1.3.4"/>
+         <p n="version" t="version" v="1.3.5"/>
       </capability>
-      <require name="package" filter="(&amp;(package=javax.annotation)(version&gt;=1.3.4))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
-      <require name="package" filter="(&amp;(package=javax.annotation.security)(version&gt;=1.3.4))" extend="false" multiple="false" optional="false">Import package javax.annotation.security</require>
-      <require name="package" filter="(&amp;(package=javax.annotation.sql)(version&gt;=1.3.4))" extend="false" multiple="false" optional="false">Import package javax.annotation.sql</require>
+      <capability name="package">
+         <p n="package" v="javax.annotation"/>
+         <p n="version" t="version" v="1.3.5"/>
+      </capability>
    </resource>
    <resource id="jakarta.validation.jakarta.validation-api/2.0.1" symbolicname="jakarta.validation.jakarta.validation-api" version="2.0.1" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar">
       <description>Bean Validation API</description>
@@ -875,44 +848,44 @@
       <require name="package" filter="(&amp;(package=javax.validation.spi)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.spi</require>
       <require name="package" filter="(&amp;(package=javax.validation.valueextraction)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.valueextraction</require>
    </resource>
-   <resource id="jakarta.ws.rs-api/2.1.5" symbolicname="jakarta.ws.rs-api" version="2.1.5" presentationname="javax.ws.rs-api" uri="https://repo1.maven.org/maven2/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar">
-      <description>Java API for RESTful Web Services (JAX-RS)</description>
-      <size>140262</size>
+   <resource id="jakarta.ws.rs-api/2.1.6" symbolicname="jakarta.ws.rs-api" version="2.1.6" presentationname="jakarta.ws.rs-api" uri="https://repo1.maven.org/maven2/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar">
+      <description>Jakarta RESTful Web Services API</description>
+      <size>140376</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html</license>
       <capability name="bundle">
          <p n="symbolicname" v="jakarta.ws.rs-api"/>
-         <p n="presentationname" v="javax.ws.rs-api"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="presentationname" v="jakarta.ws.rs-api"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="javax.ws.rs.client"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="uses:" v="javax.net.ssl,javax.ws.rs,javax.ws.rs.core"/>
       </capability>
       <capability name="package">
+         <p n="package" v="javax.ws.rs"/>
+         <p n="version" t="version" v="2.1.6"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
          <p n="package" v="javax.ws.rs.core"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="uses:" v="javax.ws.rs,javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,javax.xml.namespace"/>
       </capability>
       <capability name="package">
-         <p n="package" v="javax.ws.rs"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="package" v="javax.ws.rs.container"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="uses:" v="javax.ws.rs.core"/>
       </capability>
       <capability name="package">
          <p n="package" v="javax.ws.rs.ext"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.core"/>
       </capability>
       <capability name="package">
-         <p n="package" v="javax.ws.rs.container"/>
-         <p n="version" t="version" v="2.1.5"/>
-         <p n="uses:" v="javax.ws.rs.core"/>
-      </capability>
-      <capability name="package">
          <p n="package" v="javax.ws.rs.sse"/>
-         <p n="version" t="version" v="2.1.5"/>
+         <p n="version" t="version" v="2.1.6"/>
          <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.net.ssl</require>
@@ -920,8 +893,8 @@
       <require name="package" filter="(&amp;(package=javax.ws.rs.client)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.client</require>
       <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
       <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
       <require name="package" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.namespace</require>
    </resource>
    <resource id="jakarta.xml.bind-api/2.3.2" symbolicname="jakarta.xml.bind-api" version="2.3.2" presentationname="jakarta.xml.bind-api" uri="https://repo1.maven.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar">
@@ -961,140 +934,6 @@
       <capability name="package">
          <p n="package" v="javax.xml.bind.util"/>
          <p n="version" t="version" v="2.3.2"/>
-         <p n="uses:" v="javax.xml.bind,javax.xml.transform.sax"/>
-      </capability>
-      <require name="package" filter="(&amp;(package=javax.activation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.activation</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.attachment)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.attachment</require>
-      <require name="package" filter="(&amp;(package=javax.xml.datatype)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.datatype</require>
-      <require name="package" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.namespace</require>
-      <require name="package" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.parsers</require>
-      <require name="package" filter="(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.stream</require>
-      <require name="package" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform</require>
-      <require name="package" filter="(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.dom</require>
-      <require name="package" filter="(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.sax</require>
-      <require name="package" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.stream</require>
-      <require name="package" filter="(&amp;(package=javax.xml.validation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.validation</require>
-      <require name="package" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom</require>
-      <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
-      <require name="package" filter="(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.ext</require>
-      <require name="package" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.helpers</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.helpers)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.helpers</require>
-      <require name="package" filter="(&amp;(package=javax.xml.bind.util)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.util</require>
-   </resource>
-   <resource id="javax.annotation-api/1.3.2" symbolicname="javax.annotation-api" version="1.3.2" presentationname="javax.annotation API" uri="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar">
-      <description>Java(TM) Common Annotations 1.3 API Design Specification</description>
-      <size>26586</size>
-      <license>https://github.com/javaee/javax.annotation/blob/master/LICENSE</license>
-      <capability name="bundle">
-         <p n="symbolicname" v="javax.annotation-api"/>
-         <p n="presentationname" v="javax.annotation API"/>
-         <p n="version" t="version" v="1.3.2"/>
-         <p n="manifestversion" v="2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation"/>
-         <p n="version" t="version" v="1.3.2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation.security"/>
-         <p n="version" t="version" v="1.3.2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.annotation.sql"/>
-         <p n="version" t="version" v="1.3.2"/>
-      </capability>
-      <require name="package" filter="(&amp;(package=javax.annotation)(version&gt;=1.3.2))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
-      <require name="package" filter="(&amp;(package=javax.annotation.security)(version&gt;=1.3.2))" extend="false" multiple="false" optional="false">Import package javax.annotation.security</require>
-      <require name="package" filter="(&amp;(package=javax.annotation.sql)(version&gt;=1.3.2))" extend="false" multiple="false" optional="false">Import package javax.annotation.sql</require>
-   </resource>
-   <resource id="javax.validation.api/1.1.0.Final" symbolicname="javax.validation.api" version="1.1.0.Final" presentationname="Bean Validation API" uri="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar">
-      <description>Bean Validation API</description>
-      <size>63777</size>
-      <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
-      <capability name="bundle">
-         <p n="symbolicname" v="javax.validation.api"/>
-         <p n="presentationname" v="Bean Validation API"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-         <p n="manifestversion" v="2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.groups"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.metadata"/>
-         <p n="uses:" v="javax.validation"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation"/>
-         <p n="uses:" v="javax.validation.executable,javax.validation.metadata,javax.validation.spi,javax.validation.bootstrap"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.executable"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.constraintvalidation"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.spi"/>
-         <p n="uses:" v="javax.validation"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.bootstrap"/>
-         <p n="uses:" v="javax.validation"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.validation.constraints"/>
-         <p n="uses:" v="javax.validation"/>
-         <p n="version" t="version" v="1.1.0.Final"/>
-      </capability>
-   </resource>
-   <resource id="jaxb-api/2.3.1" symbolicname="jaxb-api" version="2.3.1" presentationname="jaxb-api" uri="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar">
-      <description>JAXB (JSR 222) API</description>
-      <size>128076</size>
-      <license>https://oss.oracle.com/licenses/CDDL+GPL-1.1, https://oss.oracle.com/licenses/CDDL+GPL-1.1</license>
-      <capability name="bundle">
-         <p n="symbolicname" v="jaxb-api"/>
-         <p n="presentationname" v="jaxb-api"/>
-         <p n="version" t="version" v="2.3.1"/>
-         <p n="manifestversion" v="2"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind"/>
-         <p n="version" t="version" v="2.3"/>
-         <p n="uses:" v="javax.xml.bind.annotation.adapters,javax.xml.bind.attachment,javax.xml.namespace,javax.xml.stream,javax.xml.transform,javax.xml.validation,org.w3c.dom,org.xml.sax"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind.annotation"/>
-         <p n="version" t="version" v="2.3"/>
-         <p n="uses:" v="javax.xml.bind,javax.xml.parsers,javax.xml.transform,javax.xml.transform.dom,org.w3c.dom"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind.annotation.adapters"/>
-         <p n="version" t="version" v="2.3"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind.attachment"/>
-         <p n="version" t="version" v="2.3"/>
-         <p n="uses:" v="javax.activation"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind.helpers"/>
-         <p n="version" t="version" v="2.3"/>
-         <p n="uses:" v="javax.xml.bind,javax.xml.bind.annotation.adapters,javax.xml.bind.attachment,javax.xml.stream,javax.xml.transform,javax.xml.validation,org.w3c.dom,org.xml.sax"/>
-      </capability>
-      <capability name="package">
-         <p n="package" v="javax.xml.bind.util"/>
-         <p n="version" t="version" v="2.3"/>
          <p n="uses:" v="javax.xml.bind,javax.xml.transform.sax"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.activation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.activation</require>
@@ -1448,25 +1287,25 @@
       <require name="package" filter="(&amp;(package=javax.persistence.spi)(version&gt;=1.0.0))" extend="false" multiple="false" optional="false">Import package javax.persistence.spi</require>
       <require name="package" filter="(&amp;(package=javax.sql)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.sql</require>
    </resource>
-   <resource id="org.glassfish.jersey.containers.jersey-container-servlet/2.29.0" symbolicname="org.glassfish.jersey.containers.jersey-container-servlet" version="2.29.0" presentationname="jersey-container-servlet" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.29/jersey-container-servlet-2.29.jar">
+   <resource id="org.glassfish.jersey.containers.jersey-container-servlet/2.29.1" symbolicname="org.glassfish.jersey.containers.jersey-container-servlet" version="2.29.1" presentationname="jersey-container-servlet" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.29.1/jersey-container-servlet-2.29.1.jar">
       <description>Jersey core Servlet 3.x implementation</description>
-      <size>32140</size>
+      <size>32146</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.containers.jersey-container-servlet"/>
          <p n="presentationname" v="jersey-container-servlet"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet.init"/>
          <p n="uses:" v="javax.servlet,javax.servlet.annotation,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.servlet.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet.async"/>
          <p n="uses:" v="javax.servlet.http,org.glassfish.jersey.servlet.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=3.0.0)(!(version&gt;=5.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
       <require name="package" filter="(&amp;(package=javax.servlet.annotation)(&amp;(version&gt;=3.0.0)(!(version&gt;=5.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet.annotation</require>
@@ -1481,35 +1320,35 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet.internal.spi)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.servlet.internal.spi</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet.spi)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.servlet.spi</require>
    </resource>
-   <resource id="org.glassfish.jersey.containers.jersey-container-servlet-core/2.29.0" symbolicname="org.glassfish.jersey.containers.jersey-container-servlet-core" version="2.29.0" presentationname="jersey-container-servlet-core" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29/jersey-container-servlet-core-2.29.jar">
+   <resource id="org.glassfish.jersey.containers.jersey-container-servlet-core/2.29.1" symbolicname="org.glassfish.jersey.containers.jersey-container-servlet-core" version="2.29.1" presentationname="jersey-container-servlet-core" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29.1/jersey-container-servlet-core-2.29.1.jar">
       <description>Jersey core Servlet 2.x implementation</description>
-      <size>73343</size>
+      <size>73346</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.containers.jersey-container-servlet-core"/>
          <p n="presentationname" v="jersey-container-servlet-core"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet"/>
          <p n="uses:" v="javax.servlet,javax.servlet.http,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.server,org.glassfish.jersey.server.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet.internal"/>
          <p n="uses:" v="javax.servlet,javax.servlet.http,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.server,org.glassfish.jersey.server.spi,org.glassfish.jersey.servlet.internal.spi,org.glassfish.jersey.servlet.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet.internal.spi"/>
          <p n="uses:" v="javax.servlet,javax.servlet.http,org.glassfish.jersey.server,org.glassfish.jersey.server.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.servlet.spi"/>
          <p n="uses:" v="javax.servlet,javax.servlet.http"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.persistence)(&amp;(version&gt;=2.2.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="true">Import package javax.persistence</require>
       <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.4.0)(!(version&gt;=5.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
@@ -1534,40 +1373,40 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet.spi)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.servlet.spi</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.uri)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.uri</require>
    </resource>
-   <resource id="org.glassfish.jersey.core.jersey-client/2.29.0" symbolicname="org.glassfish.jersey.core.jersey-client" version="2.29.0" presentationname="jersey-core-client" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.29/jersey-client-2.29.jar">
+   <resource id="org.glassfish.jersey.core.jersey-client/2.29.1" symbolicname="org.glassfish.jersey.core.jersey-client" version="2.29.1" presentationname="jersey-core-client" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.29.1/jersey-client-2.29.1.jar">
       <description>Jersey core client implementation</description>
-      <size>218808</size>
+      <size>218906</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.core.jersey-client"/>
          <p n="presentationname" v="jersey-core-client"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.client.inject"/>
          <p n="uses:" v="org.glassfish.jersey.model"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.client"/>
          <p n="uses:" v="javax.inject,javax.net.ssl,javax.ws.rs,javax.ws.rs.client,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.client.inject,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.spi"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.client.spi"/>
          <p n="uses:" v="javax.net.ssl,javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.client,org.glassfish.jersey.process"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.client.authentication"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.client,javax.ws.rs.core"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.client.filter"/>
          <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
       <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
@@ -1596,129 +1435,129 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.spi)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.spi</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.uri)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.uri</require>
    </resource>
-   <resource id="org.glassfish.jersey.core.jersey-common/2.29.0" symbolicname="org.glassfish.jersey.core.jersey-common" version="2.29.0" presentationname="jersey-core-common" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.29/jersey-common-2.29.jar">
+   <resource id="org.glassfish.jersey.core.jersey-common/2.29.1" symbolicname="org.glassfish.jersey.core.jersey-common" version="2.29.1" presentationname="jersey-core-common" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.29.1/jersey-common-2.29.1.jar">
       <description>Jersey core common packages</description>
       <size>1157956</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.core.jersey-common"/>
          <p n="presentationname" v="jersey-core-common"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.net.ssl,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.inject.spi"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="org.glassfish.jersey.internal.inject,org.glassfish.jersey.model"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.spi,org.glassfish.jersey.internal.util,org.glassfish.jersey.message,org.glassfish.jersey.model.internal,org.glassfish.jersey.process.internal,org.glassfish.jersey.spi,org.osgi.framework"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.config"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.internal.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.guava"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.inject"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.inject.spi,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.model,org.glassfish.jersey.model.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.jsr166"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.l10n"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.routing"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.message,org.glassfish.jersey.message.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.sonar"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.spi"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.core"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.util"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.core,javax.xml.namespace,javax.xml.parsers,org.glassfish.jersey.internal,org.glassfish.jersey.internal.jsr166,org.glassfish.jersey.internal.util.collection"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.internal.util.collection"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.core"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.logging"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs.core,org.glassfish.jersey.internal.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.message"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.inject,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.message.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.activation,javax.inject,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,javax.xml.parsers,javax.xml.transform,javax.xml.transform.dom,javax.xml.transform.sax,javax.xml.transform.stream,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.model"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="org.glassfish.jersey.model.internal.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.model.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.inject,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.spi,org.glassfish.jersey.model,org.glassfish.jersey.process"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.model.internal.spi"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="org.glassfish.jersey.model"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.process"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.process.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.model.internal,org.glassfish.jersey.process,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.spi"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.uri"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.uri.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.uri.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.core"/>
       </capability>
       <require name="package" filter="(&amp;(package=sun.misc)(version&gt;=0.0.0))" extend="false" multiple="false" optional="true">Import package sun.misc</require>
@@ -1765,142 +1604,142 @@
       <require name="package" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom</require>
       <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
    </resource>
-   <resource id="org.glassfish.jersey.core.jersey-server/2.29.0" symbolicname="org.glassfish.jersey.core.jersey-server" version="2.29.0" presentationname="jersey-core-server" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.29/jersey-server-2.29.jar">
+   <resource id="org.glassfish.jersey.core.jersey-server/2.29.1" symbolicname="org.glassfish.jersey.core.jersey-server" version="2.29.1" presentationname="jersey-core-server" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.29.1/jersey-server-2.29.1.jar">
       <description>Jersey core server implementation</description>
-      <size>926649</size>
+      <size>926663</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.apache.org/licenses/LICENSE-2.0.html, http://asm.objectweb.org/license.html</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.core.jersey-server"/>
          <p n="presentationname" v="jersey-core-server"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.filter"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.filter.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.internal.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.inject,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util,org.glassfish.jersey.message.internal,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.inject"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.validation,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.model,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.monitoring"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.monitoring.core"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.monitoring.jmx"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.management,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.process"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.process,org.glassfish.jersey.process.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.internal.monitoring,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey.server.monitoring"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.routing"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.message,org.glassfish.jersey.process.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.scanning"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="org.glassfish.jersey.server,org.glassfish.jersey.server.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.internal.sonar"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.model"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.message,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,org.glassfish.jersey.model.internal.spi,org.glassfish.jersey.process,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.spi,org.glassfish.jersey.uri"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.model.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.process,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.model,org.glassfish.jersey.server.spi.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.monitoring"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.spi"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.validation,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.spi.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.model,org.glassfish.jersey.server,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.model,org.glassfish.jersey.spi"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="com.sun.research.ws.wadl,javax.ws.rs.core,javax.xml.bind,javax.xml.namespace,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.config"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.wadl"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="com.sun.research.ws.wadl,javax.annotation,javax.inject,javax.ws.rs,javax.ws.rs.core,javax.xml.bind,javax.xml.namespace,javax.xml.parsers,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl,org.xml.sax"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="com.sun.research.ws.wadl,javax.ws.rs.core,javax.xml.bind.annotation,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl,org.glassfish.jersey.server.wadl.internal"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="com.sun.research.ws.wadl,javax.ws.rs.core,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.xml.bind.annotation,javax.xml.namespace"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.xml.bind,javax.xml.bind.annotation,javax.xml.namespace"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.server.wadl.processor"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.process,org.glassfish.jersey.server.model"/>
       </capability>
       <capability name="package">
          <p n="package" v="com.sun.research.ws.wadl"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,javax.xml.namespace"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
@@ -1967,29 +1806,30 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.uri.internal)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.uri.internal</require>
       <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
    </resource>
-   <resource id="org.glassfish.jersey.inject.jersey-hk2/2.29.0" symbolicname="org.glassfish.jersey.inject.jersey-hk2" version="2.29.0" presentationname="jersey-inject-hk2" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/inject/jersey-hk2/2.29/jersey-hk2-2.29.jar">
+   <resource id="org.glassfish.jersey.inject.jersey-hk2/2.29.1" symbolicname="org.glassfish.jersey.inject.jersey-hk2" version="2.29.1" presentationname="jersey-inject-hk2" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/inject/jersey-hk2/2.29.1/jersey-hk2-2.29.1.jar">
       <description>HK2 InjectionManager implementation</description>
-      <size>81751</size>
+      <size>81794</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.inject.jersey-hk2"/>
          <p n="presentationname" v="jersey-inject-hk2"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.inject.hk2"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.annotation,javax.inject,javax.ws.rs.core,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.inject.spi,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.model,org.glassfish.jersey.process.internal"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
-      <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
-      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=org.jvnet.hk2.external.runtime)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.jvnet.hk2.external.runtime</require>
       <require name="package" filter="(&amp;(package=org.glassfish.hk2.api)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.api</require>
       <require name="package" filter="(&amp;(package=org.glassfish.hk2.extension)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.extension</require>
       <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities</require>
       <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.binding)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.binding</require>
       <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.reflection)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.reflection</require>
+      <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.inject.spi)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.inject.spi</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.internal)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.internal</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.internal.guava)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.internal.guava</require>
@@ -1999,21 +1839,20 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.internal.util.collection)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.internal.util.collection</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.model)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.model</require>
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.process.internal)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.process.internal</require>
-      <require name="package" filter="(&amp;(package=org.jvnet.hk2.external.runtime)(&amp;(version&gt;=2.5.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.jvnet.hk2.external.runtime</require>
    </resource>
-   <resource id="org.glassfish.jersey.media.jersey-media-jaxb/2.29.0" symbolicname="org.glassfish.jersey.media.jersey-media-jaxb" version="2.29.0" presentationname="jersey-media-jaxb" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.29/jersey-media-jaxb-2.29.jar">
+   <resource id="org.glassfish.jersey.media.jersey-media-jaxb/2.29.1" symbolicname="org.glassfish.jersey.media.jersey-media-jaxb" version="2.29.1" presentationname="jersey-media-jaxb" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.29.1/jersey-media-jaxb-2.29.1.jar">
       <description>JAX-RS features based upon JAX-B.</description>
-      <size>86010</size>
+      <size>86017</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.media.jersey-media-jaxb"/>
          <p n="presentationname" v="jersey-media-jaxb"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.jaxb.internal"/>
-         <p n="version" t="version" v="2.29"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="uses:" v="javax.inject,javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,javax.xml.bind,javax.xml.parsers,javax.xml.stream,javax.xml.transform,javax.xml.transform.sax,javax.xml.validation,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.spi,org.glassfish.jersey.message.internal,org.w3c.dom,org.xml.sax"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.xml.bind)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind</require>
@@ -2041,25 +1880,25 @@
       <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
       <require name="package" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.helpers</require>
    </resource>
-   <resource id="org.glassfish.jersey.media.jersey-media-multipart/2.29.0" symbolicname="org.glassfish.jersey.media.jersey-media-multipart" version="2.29.0" presentationname="jersey-media-multipart" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-multipart/2.29/jersey-media-multipart-2.29.jar">
+   <resource id="org.glassfish.jersey.media.jersey-media-multipart/2.29.1" symbolicname="org.glassfish.jersey.media.jersey-media-multipart" version="2.29.1" presentationname="jersey-media-multipart" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-multipart/2.29.1/jersey-media-multipart-2.29.1.jar">
       <description>Jersey Multipart entity providers support module.</description>
-      <size>80363</size>
+      <size>80370</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.media.jersey-media-multipart"/>
          <p n="presentationname" v="jersey-media-multipart"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.media.multipart"/>
          <p n="uses:" v="javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal.util,org.glassfish.jersey.message,org.glassfish.jersey.message.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.jvnet.mimepull"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.media.multipart.file"/>
          <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.media.multipart"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
       <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
@@ -2078,20 +1917,20 @@
       <require name="package" filter="(&amp;(package=org.glassfish.jersey.server.spi.internal)(&amp;(version&gt;=2.29.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="true">Import package org.glassfish.jersey.server.spi.internal</require>
       <require name="package" filter="(&amp;(package=org.jvnet.mimepull)(&amp;(version&gt;=1.9.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.jvnet.mimepull</require>
    </resource>
-   <resource id="org.glassfish.jersey.media.jersey-media-sse/2.29.0" symbolicname="org.glassfish.jersey.media.jersey-media-sse" version="2.29.0" presentationname="jersey-media-sse" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-sse/2.29/jersey-media-sse-2.29.jar">
+   <resource id="org.glassfish.jersey.media.jersey-media-sse/2.29.1" symbolicname="org.glassfish.jersey.media.jersey-media-sse" version="2.29.1" presentationname="jersey-media-sse" uri="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-sse/2.29.1/jersey-media-sse-2.29.1.jar">
       <description>Jersey Server Sent Events entity providers support module.</description>
-      <size>77758</size>
+      <size>77761</size>
       <license>http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php, https://opensource.org/licenses/BSD-2-Clause, http://www.apache.org/licenses/LICENSE-2.0.html, https://creativecommons.org/publicdomain/zero/1.0/, http://asm.objectweb.org/license.html, jquery.org/license, http://www.opensource.org/licenses/mit-license.php, https://www.w3.org/Consortium/Legal/copyright-documents-19990405</license>
       <capability name="bundle">
          <p n="symbolicname" v="org.glassfish.jersey.media.jersey-media-sse"/>
          <p n="presentationname" v="jersey-media-sse"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.glassfish.jersey.media.sse"/>
          <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core,javax.ws.rs.sse,org.glassfish.jersey.client,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.internal.util,org.glassfish.jersey.server"/>
-         <p n="version" t="version" v="2.29.0"/>
+         <p n="version" t="version" v="2.29.1"/>
       </capability>
       <require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
       <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
