@@ -57,11 +57,7 @@ ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
 # ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
-
-#ADD files/pavlovjax/ /tmp/pavlovjax/
-ADD files/pavlovjax/com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar /opt/felix/current/bundle
-ADD files/pavlovjax/com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar /opt/felix/current/bundle
-
+ADD files/pavlovjax/ /tmp/pavlovjax/
 ADD files/reflections/ /tmp/reflections/
 ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
