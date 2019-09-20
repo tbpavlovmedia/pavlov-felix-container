@@ -1,7 +1,7 @@
-<repository lastmodified='20190917035645.136'>
-  <resource id='com.pavlovmedia.oss.jaxrs.publisher/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.publisher' presentationname='JAX-RS Services Publisher' uri='/tmp/pavlovjax/com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
+<repository lastmodified='20190920014009.069'>
+  <resource id='com.pavlovmedia.oss.jaxrs.publisher/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.publisher' presentationname='JAX-RS Services Publisher' uri='com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>40081</size>
+    <size>40135</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>
@@ -45,9 +45,9 @@
     <require name='package' filter='(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.http;version="[1.2,2)"</require>
     <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version="[1.4,2)"</require>
   </resource>
-  <resource id='com.pavlovmedia.oss.jaxrs.webconsole/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.webconsole' presentationname='JAX-RS Services Webconsole Support' uri='/tmp/pavlovjax/com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
+  <resource id='com.pavlovmedia.oss.jaxrs.webconsole/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.webconsole' presentationname='JAX-RS Services Webconsole Support' uri='com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>9192</size>
+    <size>9080</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>

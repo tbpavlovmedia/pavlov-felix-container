@@ -57,9 +57,23 @@ ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
 # ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
-ADD files/pavlovjax/ /tmp/pavlovjax/
+
+#ADD files/pavlovjax/ /tmp/pavlovjax/
+ADD files/pavlovjax/com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar /opt/felix/current/bundle
+ADD files/pavlovjax/com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar /opt/felix/current/bundle
+
 ADD files/reflections/ /tmp/reflections/
 ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
+
+#
+# TEMPORARY - STORE REPOS FOR SCR
+#
+RUN mkdir -p /opt/felix/current/repos
+ADD files/felix.repository /opt/felix/current/repos/felix/repository.xml
+ADD files/jaxrs.repository /opt/felix/current/repos/jaxrs/repository.xml
+ADD files/slf4j.repository /opt/felix/current/repos/slf4j/repository.xml
+ADD files/pavlovjax/ /opt/felix/current/repos/pavlovjax/
+ADD files/reflections/ /opt/felix/current/repos/reflections/
 
 #
 # Install bundles with OBR
