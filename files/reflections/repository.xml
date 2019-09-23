@@ -1,5 +1,5 @@
 <repository lastmodified='20190918115157.984'>
-  <resource id='org.reflections/0.9.12' symbolicname='org.reflections' presentationname='Reflections' uri='/tmp/reflections/reflections-0.9.12.jar' version='0.9.12'>
+  <resource id='org.reflections/0.9.12' symbolicname='org.reflections' presentationname='Reflections' uri='reflections-0.9.12.jar' version='0.9.12'>
     <description>Reflections - a Java runtime metadata analysis</description>
     <size>132219</size>
     <license>http://www.wtfpl.net/, http://www.opensource.org/licenses/bsd-license.html</license>

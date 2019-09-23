@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190920013441.135">
+<repository lastmodified="20190923034437.980">
    <resource id="com.eclipsesource.jaxrs.provider.gson/2.3.0.201506221200" symbolicname="com.eclipsesource.jaxrs.provider.gson" version="2.3.0.201506221200" presentationname="JAX-RS Gson Provider" uri="https://repo1.maven.org/maven2/com/eclipsesource/jaxrs/provider-gson/2.3/provider-gson-2.3.jar">
       <size>5978</size>
       <capability name="bundle">
@@ -956,6 +956,40 @@
       <require name="package" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.helpers</require>
       <require name="package" filter="(&amp;(package=javax.xml.bind.helpers)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.helpers</require>
       <require name="package" filter="(&amp;(package=javax.xml.bind.util)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.util</require>
+   </resource>
+   <resource id="javax.servlet-api/3.1.0" symbolicname="javax.servlet-api" version="3.1.0" presentationname="Java Servlet API" uri="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+      <description>Java(TM) Servlet 3.1 API Design Specification</description>
+      <size>95806</size>
+      <license>https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="javax.servlet-api"/>
+         <p n="presentationname" v="Java Servlet API"/>
+         <p n="version" t="version" v="3.1.0"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet"/>
+         <p n="uses:" v="javax.servlet.descriptor,javax.servlet.annotation"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.descriptor"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.annotation"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.servlet.http"/>
+         <p n="uses:" v="javax.servlet"/>
+         <p n="version" t="version" v="3.1.0"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.annotation)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.descriptor)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.descriptor</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(version&gt;=3.1.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
    </resource>
    <resource id="org.apache.commons.lang3/3.9.0" symbolicname="org.apache.commons.lang3" version="3.9.0" presentationname="Apache Commons Lang" uri="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar">
       <description>Apache Commons Lang, a package of Java utility classes for the  classes that are in java.lang&apos;s hierarchy, or are considered to be so  standard as to justify existence in java.lang.</description>
