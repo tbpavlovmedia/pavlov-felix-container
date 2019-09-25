@@ -70,6 +70,7 @@ ADD files/jaxrs.repository /opt/felix/current/repos/jaxrs/repository.xml
 ADD files/slf4j.repository /opt/felix/current/repos/slf4j/repository.xml
 ADD files/pavlovjax/ /opt/felix/current/repos/pavlovjax/
 ADD files/reflections/ /opt/felix/current/repos/reflections/
+ADD files/felixbundlerepository/ /opt/felix/current/repos/felixbundlerepository/
 
 #
 # Install bundles with OBR

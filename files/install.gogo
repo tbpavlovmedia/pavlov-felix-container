@@ -46,4 +46,4 @@ obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
 echo "Installing JAX-RS"
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.webconsole
-# obr:deploy -ro -s com.eclipsesource.jaxrs.swagger-all
+#obr:deploy -ro -s com.eclipsesource.jaxrs.swagger-all

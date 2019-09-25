@@ -1,7 +1,7 @@
-<repository lastmodified='20190920043153.992'>
+<repository lastmodified='20190925013537.945'>
   <resource id='com.pavlovmedia.oss.jaxrs.publisher/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.publisher' presentationname='JAX-RS Services Publisher' uri='com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>40135</size>
+    <size>39822</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>
@@ -47,7 +47,7 @@
   </resource>
   <resource id='com.pavlovmedia.oss.jaxrs.webconsole/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.webconsole' presentationname='JAX-RS Services Webconsole Support' uri='com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>9079</size>
+    <size>9559</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>
@@ -61,6 +61,7 @@
     <require name='package' filter='(&amp;(package=javax.servlet)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.servlet;version="[3.1,4)"</require>
     <require name='package' filter='(&amp;(package=javax.servlet.http)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http;version="[3.1,4)"</require>
     <require name='package' filter='(&amp;(package=javax.ws.rs.core)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core;version="[2.1,3)"</require>
-    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.webconsole;version="[3.2,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.webconsole;version="[3.3,4)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version="[1.4,2)"</require>
   </resource>
 </repository>

@@ -1,48 +1,48 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190923034441.322">
-   <resource id="slf4j.api/1.7.28" symbolicname="slf4j.api" version="1.7.28" presentationname="slf4j-api" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar">
+<repository lastmodified="20190925123139.384">
+   <resource id="slf4j.api/1.8.0.beta4" symbolicname="slf4j.api" version="1.8.0.beta4" presentationname="slf4j-api" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.jar">
       <description>The slf4j API</description>
-      <size>41117</size>
+      <size>44213</size>
       <capability name="bundle">
          <p n="symbolicname" v="slf4j.api"/>
          <p n="presentationname" v="slf4j-api"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
          <p n="package" v="org.slf4j"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
       <capability name="package">
          <p n="package" v=" org.slf4j.spi"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
       <capability name="package">
          <p n="package" v=" org.slf4j.helpers"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
       <capability name="package">
          <p n="package" v=" org.slf4j.event"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
-      <require name="package" filter="(&amp;(package=org.slf4j.impl)(version&gt;=1.6.0))" extend="false" multiple="false" optional="false">Import package org.slf4j.impl</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
    </resource>
-   <resource id="slf4j.nop/1.7.28" symbolicname="slf4j.nop" version="1.7.28" presentationname="slf4j-nop" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.28/slf4j-nop-1.7.28.jar">
-      <description>SLF4J NOP Binding</description>
-      <size>4020</size>
+   <resource id="slf4j.simple/1.8.0.beta4" symbolicname="slf4j.simple" version="1.8.0.beta4" presentationname="slf4j-simple" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.8.0-beta4/slf4j-simple-1.8.0-beta4.jar">
+      <description>SLF4J Simple binding</description>
+      <size>15420</size>
       <capability name="bundle">
-         <p n="symbolicname" v="slf4j.nop"/>
-         <p n="presentationname" v="slf4j-nop"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="symbolicname" v="slf4j.simple"/>
+         <p n="presentationname" v="slf4j-simple"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
          <p n="manifestversion" v="2"/>
       </capability>
       <capability name="package">
-         <p n="package" v="org.slf4j.impl"/>
-         <p n="version" t="version" v="1.7.28"/>
+         <p n="package" v="org.slf4j.simple"/>
+         <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
-      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.7.28))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
-      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.7.28))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
-      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.7.28))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
-      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.7.28))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
    </resource>
 </repository>
