@@ -44,7 +44,7 @@ ADD files/system.properties /opt/felix/current/conf/
 ADD files/logging.properties /opt/felix/current/conf/
 
 #
-# Now expose where config manager dumps thigs so we can persist
+# Now expose where config manager dumps things so we can persist
 # across starts
 #
 RUN mkdir -p /opt/felix/current/configs
@@ -55,6 +55,7 @@ RUN mkdir -p /opt/felix/current/configs
 ADD files/install.gogo /tmp
 ADD files/felix.repository /tmp/felix/repository.xml
 ADD files/jaxrs.repository /tmp/jaxrs/repository.xml
+ADD files/swagger.repository /tmp/swagger/repository.xml
 ADD files/slf4j.repository /tmp/slf4j/repository.xml
 # ADD https://raw.githubusercontent.com/pavlovmedia/osgi-jaxrs-services/master/obr/repository.xml /tmp/pavlovjax/repository.xml
 ADD files/pavlovjax/ /tmp/pavlovjax/
@@ -62,14 +63,10 @@ ADD files/reflections/ /tmp/reflections/
 ADD files/com.pavlovmedia.oss.osgi.gogo-1.0.2.jar /opt/felix/current/bundle
 
 #
-# TEMPORARY - STORE REPOS FOR SCR
+# TEMPORARY - STORE REPOS FOR SCR AND TESTING
 #
 RUN mkdir -p /opt/felix/current/repos
-ADD files/felix.repository /opt/felix/current/repos/felix/repository.xml
 ADD files/jaxrs.repository /opt/felix/current/repos/jaxrs/repository.xml
-ADD files/slf4j.repository /opt/felix/current/repos/slf4j/repository.xml
-ADD files/pavlovjax/ /opt/felix/current/repos/pavlovjax/
-ADD files/reflections/ /opt/felix/current/repos/reflections/
 ADD files/felixbundlerepository/ /opt/felix/current/repos/felixbundlerepository/
 
 #

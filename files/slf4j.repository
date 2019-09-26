@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<repository lastmodified="20190925123139.384">
+<repository lastmodified="20190926104402.799">
    <resource id="slf4j.api/1.8.0.beta4" symbolicname="slf4j.api" version="1.8.0.beta4" presentationname="slf4j-api" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.jar">
       <description>The slf4j API</description>
       <size>44213</size>
@@ -25,7 +25,6 @@
          <p n="package" v=" org.slf4j.event"/>
          <p n="version" t="version" v="1.8.0.beta4"/>
       </capability>
-      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.beta4))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
    </resource>
    <resource id="slf4j.simple/1.8.0.beta4" symbolicname="slf4j.simple" version="1.8.0.beta4" presentationname="slf4j-simple" uri="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.8.0-beta4/slf4j-simple-1.8.0-beta4.jar">
       <description>SLF4J Simple binding</description>

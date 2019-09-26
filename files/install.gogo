@@ -3,13 +3,10 @@ repos remove http://felix.apache.org/obr/releases.xml
 
 repos add file:///tmp/felix/repository.xml
 repos add file:///tmp/jaxrs/repository.xml
+repos add file:///tmp/swagger/repository.xml
 repos add file:///tmp/slf4j/repository.xml
 repos add file:///tmp/pavlovjax/repository.xml
 repos add file:///tmp/reflections/repository.xml
-
-echo "Installing slf4j"
-# obr:deploy -s slf4j.api
-# obr:deploy -s slf4j.simple
 
 echo "Installing Felix extras"
 obr:deploy -ro -s org.apache.felix.http.servlet-api
@@ -27,23 +24,11 @@ obr:deploy -ro -s org.apache.felix.webconsole.plugins.obr
 obr:deploy -ro -s org.apache.felix.http.whiteboard
 obr:deploy -ro -s org.apache.felix.http.jetty
 
-
-echo "Test"
-
-# sse deployed in container - builds container successfully with all uncommented
-#
-# obr:deploy -ro -s org.glassfish.jersey.media.jersey-media-sse
-# obr:deploy -ro -s jakarta.validation.jakarta.validation-api
-
-
-# sse deployed in scr - builds container successfully with all uncommented
-#
+echo "Installing JAX-RS"
 obr:deploy -ro -s jakarta.validation.jakarta.validation-api
 obr:deploy -ro -s org.glassfish.jersey.inject.jersey-hk2
-obr:deploy -ro -s org.glassfish.jersey.core.jersey-server
-
-
-echo "Installing JAX-RS"
+obr:deploy -ro -s org.glassfish.jersey.containers.jersey-container-servlet
+obr:deploy -ro -s io.swagger.jersey2-jaxrs
+obr:deploy -ro -s io.swagger.annotations
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.publisher
 obr:deploy -ro -s com.pavlovmedia.oss.jaxrs.webconsole
-#obr:deploy -ro -s com.eclipsesource.jaxrs.swagger-all

@@ -1,0 +1,210 @@
+<?xml version="1.0" ?>
+<repository lastmodified="20190926104401.858">
+   <resource id="io.swagger.annotations/1.5.13" symbolicname="io.swagger.annotations" version="1.5.13" presentationname="swagger-annotations" uri="https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar">
+      <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
+      <size>20654</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="io.swagger.annotations"/>
+         <p n="presentationname" v="swagger-annotations"/>
+         <p n="version" t="version" v="1.5.13"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.annotations"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+   </resource>
+   <resource id="io.swagger.core/1.5.13" symbolicname="io.swagger.core" version="1.5.13" presentationname="swagger-core" uri="https://repo1.maven.org/maven2/io/swagger/swagger-core/1.5.13/swagger-core-1.5.13.jar">
+      <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
+      <size>111254</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="io.swagger.core"/>
+         <p n="presentationname" v="swagger-core"/>
+         <p n="version" t="version" v="1.5.13"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.converter"/>
+         <p n="uses:" v="io.swagger.models,io.swagger.models.properties,org.apache.commons.lang3,org.slf4j,com.fasterxml.jackson.databind,io.swagger.util,com.fasterxml.jackson.databind.type"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.core.filter"/>
+         <p n="uses:" v="io.swagger.models.properties,io.swagger.models,io.swagger.models.parameters,io.swagger.model"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.config"/>
+         <p n="uses:" v="io.swagger.core.filter,io.swagger.models"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.model"/>
+         <p n="uses:" v="io.swagger.models"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.util"/>
+         <p n="uses:" v="io.swagger.models.properties,org.apache.commons.lang3,io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models.auth,io.swagger.models,io.swagger.models.parameters,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.annotation,com.fasterxml.jackson.dataformat.yaml,io.swagger.converter,javax.validation.constraints,org.slf4j,com.fasterxml.jackson.databind.type,com.google.common.collect"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.annotation)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.annotation</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.core)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.core</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.core.type)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.core.type</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.core.util)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.core.util</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.introspect)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.introspect</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.jsontype)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.jsontype</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.module)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.module</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.node)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.node</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.type)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.type</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.util)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.util</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.dataformat.yaml)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.dataformat.yaml</require>
+      <require name="package" filter="(&amp;(package=com.google.common.collect)(&amp;(version&gt;=20.0.0)(!(version&gt;=21.0.0))))" extend="false" multiple="false" optional="false">Import package com.google.common.collect</require>
+      <require name="package" filter="(&amp;(package=io.swagger.annotations)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.annotations</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.auth)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.auth</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.parameters)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.parameters</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.properties)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.properties</require>
+      <require name="package" filter="(&amp;(package=io.swagger.util)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.util</require>
+      <require name="package" filter="(&amp;(package=javax.validation.constraints)(&amp;(version&gt;=1.1.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.validation.constraints</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=org.apache.commons.lang3)(&amp;(version&gt;=3.2.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package org.apache.commons.lang3</require>
+      <require name="package" filter="(&amp;(package=org.apache.commons.lang3.text)(&amp;(version&gt;=3.2.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package org.apache.commons.lang3.text</require>
+      <require name="package" filter="(&amp;(package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+   </resource>
+   <resource id="io.swagger.jaxrs/1.5.13" symbolicname="io.swagger.jaxrs" version="1.5.13" presentationname="swagger-jaxrs" uri="https://repo1.maven.org/maven2/io/swagger/swagger-jaxrs/1.5.13/swagger-jaxrs-1.5.13.jar">
+      <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
+      <size>70781</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="io.swagger.jaxrs"/>
+         <p n="presentationname" v="swagger-jaxrs"/>
+         <p n="version" t="version" v="1.5.13"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,javax.ws.rs,io.swagger.models.properties,io.swagger.jaxrs.ext,com.fasterxml.jackson.databind.introspect,io.swagger.util,io.swagger.models,io.swagger.models.parameters,io.swagger.converter,io.swagger.models.auth,org.slf4j,com.fasterxml.jackson.databind.type,org.apache.commons.lang3,io.swagger.annotations,io.swagger.jaxrs.config,javax.ws.rs.core"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.config"/>
+         <p n="uses:" v="javax.ws.rs,io.swagger.jaxrs,io.swagger.config,org.reflections,org.slf4j,javax.servlet,org.apache.commons.lang3,io.swagger.core.filter,io.swagger.annotations,org.reflections.util,io.swagger.models,com.google.common.reflect,org.reflections.scanners,javax.servlet.http,javax.ws.rs.core"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.ext"/>
+         <p n="uses:" v="io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models,io.swagger.models.parameters,com.fasterxml.jackson.databind.type,io.swagger.jaxrs,org.slf4j"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.listing"/>
+         <p n="uses:" v="javax.servlet,io.swagger.annotations,com.fasterxml.jackson.core,javax.ws.rs,javax.ws.rs.core,org.apache.commons.lang3,com.fasterxml.jackson.databind,io.swagger.jaxrs,io.swagger.config,io.swagger.util,org.slf4j,io.swagger.core.filter,io.swagger.models,io.swagger.jaxrs.config,javax.ws.rs.ext"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.core)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.core</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.introspect)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.introspect</require>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind.type)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind.type</require>
+      <require name="package" filter="(&amp;(package=com.google.common.base)(&amp;(version&gt;=20.0.0)(!(version&gt;=21.0.0))))" extend="false" multiple="false" optional="false">Import package com.google.common.base</require>
+      <require name="package" filter="(&amp;(package=com.google.common.collect)(&amp;(version&gt;=20.0.0)(!(version&gt;=21.0.0))))" extend="false" multiple="false" optional="false">Import package com.google.common.collect</require>
+      <require name="package" filter="(&amp;(package=com.google.common.reflect)(&amp;(version&gt;=20.0.0)(!(version&gt;=21.0.0))))" extend="false" multiple="false" optional="false">Import package com.google.common.reflect</require>
+      <require name="package" filter="(&amp;(package=io.swagger.annotations)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.annotations</require>
+      <require name="package" filter="(&amp;(package=io.swagger.config)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.config</require>
+      <require name="package" filter="(&amp;(package=io.swagger.converter)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.converter</require>
+      <require name="package" filter="(&amp;(package=io.swagger.core.filter)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.core.filter</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.ext)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.jaxrs.ext</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.auth)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.auth</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.parameters)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.parameters</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.properties)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.properties</require>
+      <require name="package" filter="(&amp;(package=io.swagger.util)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.util</require>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=1.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=1.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=1.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
+      <require name="package" filter="(&amp;(package=org.apache.commons.lang3)(&amp;(version&gt;=3.2.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package org.apache.commons.lang3</require>
+      <require name="package" filter="(&amp;(package=org.reflections)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.reflections</require>
+      <require name="package" filter="(&amp;(package=org.reflections.scanners)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.reflections.scanners</require>
+      <require name="package" filter="(&amp;(package=org.reflections.util)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.reflections.util</require>
+      <require name="package" filter="(&amp;(package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+   </resource>
+   <resource id="io.swagger.jersey2-jaxrs/1.5.13" symbolicname="io.swagger.jersey2-jaxrs" version="1.5.13" presentationname="swagger-jersey2-jaxrs (Jersey 2.x support)" uri="https://repo1.maven.org/maven2/io/swagger/swagger-jersey2-jaxrs/1.5.13/swagger-jersey2-jaxrs-1.5.13.jar">
+      <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
+      <size>6722</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="io.swagger.jersey2-jaxrs"/>
+         <p n="presentationname" v="swagger-jersey2-jaxrs (Jersey 2.x support)"/>
+         <p n="version" t="version" v="1.5.13"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey"/>
+         <p n="uses:" v="org.glassfish.jersey.media.multipart,com.fasterxml.jackson.databind,io.swagger.models.properties,io.swagger.jaxrs.ext,io.swagger.util,io.swagger.models.parameters,io.swagger.converter"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey.config"/>
+         <p n="uses:" v="javax.servlet,io.swagger.jaxrs.config"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey.listing"/>
+         <p n="uses:" v="io.swagger.jaxrs.listing"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.databind)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.databind</require>
+      <require name="package" filter="(&amp;(package=io.swagger.converter)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.converter</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.config)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.jaxrs.config</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.ext)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.jaxrs.ext</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.listing)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.jaxrs.listing</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.parameters)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.parameters</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models.properties)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.models.properties</require>
+      <require name="package" filter="(&amp;(package=io.swagger.util)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package io.swagger.util</require>
+      <require name="package" filter="(&amp;(package=javax.servlet)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.jersey.media.multipart)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.media.multipart</require>
+   </resource>
+   <resource id="io.swagger.models/1.5.13" symbolicname="io.swagger.models" version="1.5.13" presentationname="swagger-models" uri="https://repo1.maven.org/maven2/io/swagger/swagger-models/1.5.13/swagger-models-1.5.13.jar">
+      <description>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</description>
+      <size>143308</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+      <capability name="bundle">
+         <p n="symbolicname" v="io.swagger.models"/>
+         <p n="presentationname" v="swagger-models"/>
+         <p n="version" t="version" v="1.5.13"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.auth"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.parameters"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,org.slf4j,io.swagger.models,io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.properties"/>
+         <p n="uses:" v="io.swagger.models,com.fasterxml.jackson.annotation,org.slf4j,io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,javax.xml.bind.annotation,io.swagger.models.parameters,io.swagger.models.refs,io.swagger.models.auth"/>
+         <p n="version" t="version" v="1.5.13.SNAPSHOT"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.fasterxml.jackson.annotation)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package com.fasterxml.jackson.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+   </resource>
+</repository>
