@@ -1,7 +1,7 @@
-<repository lastmodified='20190926105235.426'>
+<repository lastmodified='20190927030924.044'>
   <resource id='com.pavlovmedia.oss.jaxrs.publisher/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.publisher' presentationname='JAX-RS Services Publisher' uri='com.pavlovmedia.oss.jaxrs.publisher-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>39804</size>
+    <size>39750</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>
@@ -47,7 +47,7 @@
   </resource>
   <resource id='com.pavlovmedia.oss.jaxrs.webconsole/1.1.0.SNAPSHOT' symbolicname='com.pavlovmedia.oss.jaxrs.webconsole' presentationname='JAX-RS Services Webconsole Support' uri='com.pavlovmedia.oss.jaxrs.webconsole-1.1.0-SNAPSHOT.jar' version='1.1.0.SNAPSHOT'>
     <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
-    <size>9559</size>
+    <size>9556</size>
     <documentation>http://www.pavlovmedia.com</documentation>
     <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
     <category id='JAX-RS'/>
