@@ -1,0 +1,5 @@
+https://repo1.maven.org/maven2/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar
+https://repo1.maven.org/maven2/io/swagger/swagger-core/1.5.13/swagger-core-1.5.13.jar
+https://repo1.maven.org/maven2/io/swagger/swagger-jaxrs/1.5.13/swagger-jaxrs-1.5.13.jar
+https://repo1.maven.org/maven2/io/swagger/swagger-jersey2-jaxrs/1.5.13/swagger-jersey2-jaxrs-1.5.13.jar
+https://repo1.maven.org/maven2/io/swagger/swagger-models/1.5.13/swagger-models-1.5.13.jar
